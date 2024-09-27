@@ -1,0 +1,19 @@
+/** {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}*/
+body{
+    background-color:white;
+}
+/*.pippo {
+    background-color: antiquewhite;
+    color: black;
+}*/
+section.test
+{
+    background-color:blanchedalmond;
+}  
+p {
+    color: red;
+}

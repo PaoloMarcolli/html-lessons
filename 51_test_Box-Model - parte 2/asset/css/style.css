@@ -1,0 +1,13 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.box {
+    width: 30%;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 10px;
+    box-sizing: border-box;
+    background-color: lightblue;
+}

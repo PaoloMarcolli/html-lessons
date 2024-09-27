@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test CSS</title>
+    <link rel="stylesheet" href="asset/css/style.css"></link>
+    <link rel="icon" href="asset/img/favicon.ico" type="image/x-icon"></link>
+    <link rel="icon" href="asset/img/favicon-32x32.png" size="32x32" type="image/png"></link>
+    <link rel="icon" href="asset/img/favicon-16x16.png" size="16x16" type="image/png"></link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a ref="#">Home</a></li>
+                <li><a ref="#">Contects</a></li>
+                <li><a ref="#">News</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 class="title">Selettori di base</h1>
+    <article>
+        <h1>Element selector</h1>
+        <p >seleziona tutti gli elementi di un tipo specificato. Ecco un esempio.</p>
+    </article>
+    <article>
+        <h1>Class Selector</h1>
+        <p class="example">seleziona tutti gli elementi con una determinata classe. Ecco un esempio.</p>
+    </article>
+    <article>
+        <h1 id="main-tile">ID Selector</h1>
+        <p>
+            seleziona un elemento con un determinato ID (notare che gli ID devono essere univoci all'interno della pagina). Ecco un esempio.
+        </p>
+    </article>
+    <h1 class="title">Selettori combinatori</h1>
+    <article>
+        <h1>Descendant Selector</h1>
+        <div>
+            <p>seleziona gli elementi discendenti di un elemento specificato. Ecco un esempio.</p>
+        </div>
+    </article>
+    <article>
+        <h1>Child Selector</h1>
+        <p>seleziona gli elementi figli diretti di un elemento specificato. Ecco un esempio.</p>
+        <div>
+            <ul>
+                <li>primo-h1</li>
+                <li>primo-h1</li>
+                <li>primo-h1</li>
+            </ul>
+        </div>
+    </article>
+    <article>
+        <h1>Adjacent Sibling Selector</h1>
+        <p> seleziona l'elemento che è il fratello adiacente di un elemento specificato. Ecco un esempio.</p>
+    </article>
+    <article></article>
+        <h1>General Sibling Selector</h1>
+        <p> seleziona tutti gli elementi fratelli di un elemento specificato. Ecco un esempio.</p>
+        <p> seleziona tutti gli elementi fratelli di un elemento specificato. Ecco un esempio.</p>
+        <p> seleziona tutti gli elementi fratelli di un elemento specificato. Ecco un esempio.</p>
+        <p> seleziona tutti gli elementi fratelli di un elemento specificato. Ecco un esempio.</p>
+    </article>    
+    <h1 class="title">Selettori di attributo</h1>
+    <article>
+        <h1>[attribute]</h1>
+        <p> seleziona gli elementi che hanno un attributo specificato. Ecco un esempio.</p>
+        <a href="https://it.wikipedia.org/wiki/HTML" target="_blank">HTML</a>
+    </article>
+    <article>
+        <h1>[attribute="value"]</h1>
+        <p> seleziona gli elementi con un attributo specificato che ha un valore esatto. Ecco un esempio.</p>
+        <a href="https://it.wikipedia.org/wiki/HTML" target="_blank">HTML</a>
+    </article>
+    <article>
+        <h1>[attribute^="value"]</h1>
+        <p> seleziona gli elementi il cui valore dell'attributo inizia con un determinato valore. Ecco un esempio.</p>
+        <a href="https://it.wikipedia.org/wiki/HTML" target="_blank">HTML</a>
+    </article>    
+    <article>
+        <h1>[attribute$="value"]</h1>
+        <p> seleziona gli elementi il cui valore dell'attributo termina con un determinato valore. Ecco un esempio.</p>
+        <a href="https://it.wikipedia.org/wiki/cicco.pdf" target="_blank">HTML</a>
+    </article>  
+    <article>
+        <h1>[attribute*="value"]</h1>
+        <p>  seleziona gli elementi il cui valore dell'attributo contiene una determinata stringa. Ecco un esempio.</p>
+        <a href="https://it.giorgia.org/wiki/HTML" target="_blank">HTML</a>
+    </article>           
+    <h1 class="title">Selettori di pseudo-classi</h1>
+    <article>
+        <h1>:hover</h1>
+        <p> seleziona un elemento quando l'utente ci passa sopra con il mouse. Ecco un esempio.</p>
+        <button>Button Hover</button>
+    </article>           
+    <article>
+        <h1>:focus</h1>
+        <p> seleziona un elemento quando riceve il focus. Ecco un esempio.</p>
+        <input>Input</input>
+    </article>           
+    <article>
+        <h1>:nth-child(n)</h1>
+        <div id="test097">
+            <p>seleziona il n-esimo figlio di un elemento. Ecco un esempio.</p>
+            <p>seleziona il n-esimo figlio di un elemento. Ecco un esempio.</p>
+            <p>seleziona il n-esimo figlio di un elemento. Ecco un esempio.</p>
+            <p>seleziona il n-esimo figlio di un elemento. Ecco un esempio.</p>
+            <p>seleziona il n-esimo figlio di un elemento. Ecco un esempio.</p>
+            <p>seleziona il n-esimo figlio di un elemento. Ecco un esempio.</p>
+        </div>
+    </article>           
+    <article>
+        <h1>:first-child</h1>
+        <div id="test098">
+            <p>seleziona il primo figlio di un elemento. Ecco un esempio.</p>
+            <p>seleziona il primo figlio di un elemento. Ecco un esempio.</p>
+            <p>seleziona il primo figlio di un elemento. Ecco un esempio.</p>
+            <p>seleziona il primo figlio di un elemento. Ecco un esempio.</p>
+            <p>seleziona il primo figlio di un elemento. Ecco un esempio.</p>
+            <p>seleziona il primo figlio di un elemento. Ecco un esempio.</p>
+        </div>
+    </article>           
+    <article>
+        <h1>:last-child</h1>
+        <div id="test099" >
+            <p>seleziona l'ultimo figlio di un elemento. Ecco un esempio.</p>
+            <p>seleziona il primo figlio di un elemento. Ecco un esempio.</p>
+            <p>seleziona il primo figlio di un elemento. Ecco un esempio.</p>
+            <p>seleziona il primo figlio di un elemento. Ecco un esempio.</p>
+        </div>
+    </article>           
+
+    <!--
+    <ul>
+        <li>Ciao</li>
+        <li>Ciao</li>
+        <li>Ciao</li>
+    </ul>
+    <ol>
+        <li>Ciao</li>
+        <li>Ciao</li>
+        <li>Ciao</li>
+    </ol>
+    -->
+    <!--<h1 id="primo-h1" class="dimensione-sm">Test CSS</h1>
+    <h1 >Test CSS</h1>
+    <h1>Test CSS</h1>
+    <h1 >Test CSS</h1>
+    <span>Ciao sono span</span>
+    <p >Ciao sono paragrafo</p>
+    <div>
+        <h1>
+            Tutoria CSS
+        </h1>
+    </div>
+    <i class="material-symbols-outlined">
+        search
+    </i>-->
+</body>
+</html>

@@ -1,0 +1,142 @@
+/* Main stylesheet semantic block    */
+body
+{
+    background-color:white;
+    font-family:"Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Sofadi One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color:black;
+    margin:0;
+    /*background-image: url("../img/background.jpg");*/
+}
+
+/* Article stylesheet block         */
+article
+{   
+    margin: 25px 25px 25px 25px;
+    border:1px solid blue;
+    background-color: lightcyan;
+}
+/*----------------------------------*/
+
+/* */
+h1{
+    color: #156faa;
+    font-size: 24px;
+}
+h1.stile-esterno{
+    color: brown;
+    font-size: 24px;
+}
+
+h2{
+    color: #156faa;
+    font-size: 24px;
+}
+
+/* Nav bar stylesheet block         */
+nav {
+    height: 50px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #156faa;
+    border-color:  #156faa;
+}
+nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding:  14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    }
+nav a:hover {
+    background: #60afd3;
+}
+/*----------------------------------*/
+
+/* Main stylesheet block             */
+main {
+    margin-top: 50px;
+    margin-left: 25px;
+}
+/*----------------------------------*/
+
+/* Article stylesheet block         */
+h1.title {
+    text-align: left;
+}
+/*----------------------------------*/
+
+div.stile-esterno-simple {
+    width: 300px;
+    height: 150px;
+    background-color: lightgrey;
+}
+
+div.stile-esterno-padding {
+    width: 300px;
+    height: 150px;
+    padding: 20px 20px 20px 20px; 
+    background-color: lightblue;
+}
+div.stile-esterno-border {
+    width: 300px;
+    height: 150px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: blue;
+    background-color: lightseagreen;
+}
+
+div.stile-esterno-margin {
+    width: 300px;
+    height: 150px;
+    margin: 20px 20px 20px 20px;   
+    border-color: blue;
+    background-color: cadetblue;
+}
+
+div.stile-esterno-border-box-with-padding {
+    width: 300px;
+    height: 150px;
+    padding: 20px 20px 20px 20px;   
+    border-width: 1px;
+    border-style: solid;
+    border-color: blue;
+    background-color: rgb(174, 204, 204);
+    box-sizing: border-box;
+}
+
+div.stile-esterno-border-box {
+    width: 300px;
+    height: 150px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: blue;
+    background-color: rgb(168, 216, 216);
+    box-sizing: border-box;
+}
+
+div.stile-esterno-content-box-with-padding {
+    width: 300px;
+    height: 150px;
+    padding: 20px 20px 20px 20px;   
+    border-width: 1px;
+    border-style: solid;
+    border-color: blue;
+    background-color: rgb(174, 204, 204);
+}
+
+div.stile-esterno-content-box {
+    width: 300px;
+    height: 150px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: blue;
+    background-color: rgb(168, 216, 216);
+}

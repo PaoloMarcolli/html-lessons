@@ -1,0 +1,42 @@
+/* Main stylesheet semantic block    */
+body
+{
+    background-color:white;
+    font-family:"Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Sofadi One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color:black;
+    margin:0;
+    background-image: url("../img/background.jpg");
+}
+article
+{   
+    margin-top: 75px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+/*----------------------------------*/
+/* Nav bar stylesheet block         */
+.navbar {
+    height: 50px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #156faa;
+    border-color:  #156faa;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding:  14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    }
+.navbar a:hover {
+    background: #60afd3;
+}
+/*----------------------------------*/

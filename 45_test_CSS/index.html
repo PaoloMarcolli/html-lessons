@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test CSS</title>
+    <link rel="stylesheet" href="asset/css/style.css"></link>
+    <link rel="icon" href="asset/img/favicon.ico" type="image/x-icon"></link>
+    <link rel="icon" href="asset/img/favicon-32x32.png" size="32x32" type="image/png"></link>
+    <link rel="icon" href="asset/img/favicon-16x16.png" size="16x16" type="image/png"></link>
+    <style>
+        h1.stile-interno{
+            color: orangered;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header> 
+    <main>
+        <h1 class="title">Test CSS</h1>
+        <article>
+            <h1 style="color: red;font-size: 24px;">Test CSS (stile inline)</h1>
+            <p>Stile inline nel tag considerato una <strong>bad practice</strong></p>
+        </article>
+        <article>
+            <h1 class="stile-interno">Test CSS (stili interni)</h1>
+            <p>Stile all'interno della tag semantico head, style</p>
+        </article>
+        <article>
+            <h1 class="stile-esterno">Test CSS (stile esterno)</h1>
+            <p>Foglio di stile esterno style.css </p>
+        </article>
+    </main>   
+</body>
+</html>

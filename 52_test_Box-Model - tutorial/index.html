@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esempio di Layout con Box Model</title>
+    <link rel="stylesheet" href="asset/css/style.css"></link>
+    <link rel="icon" href="asset/img/favicon.ico" type="image/x-icon"></link>
+    <link rel="icon" href="asset/img/favicon-32x32.png" size="32x32" type="image/png"></link>
+    <link rel="icon" href="asset/img/favicon-16x16.png" size="16x16" type="image/png"></link>
+</head>
+<body>
+    <!--
+        1) Introduzione
+        2) Block e inline box -display :block
+           Bloack)  - crea una nuova riga
+                    - il box si espanderà fino ad occupare il 100% del container
+                    - width e height sono rispettate
+                    - padding e margin e border faranno allontanare altri elementi dal box
+           Inline)  - non crea una nuova riga
+                    - width e height non vengono applicate
+                    - vertcal padding , margin e border si applicano ma non spostano altri elementi
+                      a differenzaa di quelli orozzontali
+        3) Tipi di display : inner (flex) e outer
+        4) Cos'è il box model : content-box (width,height) ,padding box (padding) , border box (border),margin box (margin)
+        5) Box model normale (content-box)
+        6) Box model alternativo (border-box)
+        7) Margin + margin collapsing
+        8) Padding
+        9) Border
+        10) Inline-block : comodo per non creare una nuova riga ma apllicare width ,height,padding,margin,border e display
+    -->
+    <!-- <h1>Titolo</h1>
+    <p>Block</p>
+    <a style="padding-left: 60px; padding-top: 60px;padding-right:  20px;padding-bottom:  100px;"></a><a style="padding-left: 60px; padding-top: 60px;padding-right:  20px;padding-bottom:  100px;">inline</a><a>inline</a>
+    <p style="padding-left: 60px; padding-top: 60px;">block2</p> -->
+
+    <!-- <div class="box">   
+        sono il contenuto del box
+    </div> -->
+
+    <span class="span1" >Sono uno span</span><span>Sono un altro span</span>
+
+    <div class="container">
+        <p class="one">Io sono il paragrafo 1</p>
+        <p class="two">Io sono il paragrafo 2</p>
+    </div>
+    
+    <!-- <ul>
+        <li>li</li>
+        <li>li</li>
+        <li>li</li>
+        <li>li</li>
+    </ul> -->
+</body>
+</html>

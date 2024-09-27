@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css"></link>
+    <title>immagini</title>
+</head>
+<body>
+    <header >
+        <div class="navbar" >
+            <a href="../../index.html" target="_self"><strong>HTLM/CSS</strong></a>
+            <a href="basics.html" target="_self" >TYPOGRAPHY</a>
+            <a href="images.html" target="_self">IMG</a>
+            <a href="link.html" target="_self">LINK</a>
+            <a href="favicon.html" target="_self">FAVICON</a>
+        </div>
+    </header>       
+    <article>
+        <h1>Dimostrazioni tag img e uso relativi attrivuti</h1>
+        <p>Ecco la nostra immagine da risorse interne</p>
+        <img src="../img/sumo-cyco-01.jpg" width="250px" alt="Sumo Cyco Band">
+        <p>Ecco la nostra immagine da risorse interne ma come gif animata</p>
+        <img src="../img/sumo-cyco-03.gif" width="250px" alt="Sumo Cyco Band">
+        <p>Ecco la nostra immagine da risorse esterne url</p>
+        <img src="https://distortedsoundmag.com/wp-content/uploads/2017/02/5a8e2d60-e54a-4d80-afd7-46549f5bc302.jpg" width="250px" alt="Sumo Cyco Band">
+        <p>Ecco la nostra immagine da risorse interne con titolo</p>
+        <img src="../img/sumo-cyco-02.jpg" width="250px" alt="Sumo Cyco Band" title="Sumo Cyco Band">
+        <p>Ecco la nostra immagine da risorse esterne url e fare un collegamento ad esso</p>
+        <a href="https://distortedsoundmag.com/wp-content/uploads/2017/02/5a8e2d60-e54a-4d80-afd7-46549f5bc302.jpg" target="_blank">
+            <img src="https://distortedsoundmag.com/wp-content/uploads/2017/02/5a8e2d60-e54a-4d80-afd7-46549f5bc302.jpg" width="250px" alt="Sumo Cyco Band">
+        </a>
+        <p>Ecco la nostra immagine mappata</p>
+        <img src="../img/sumo-cyco-02.jpg" width="250" alt="Sumo Cyco Band" usemap="#sumocycomap">
+        <map id="sumocycomap" name="planetmap">
+            <area shape="rect" coords="0,0,50,50" title="Sun" href="../img/sumo-cyco-01.jpg" target="_blank">
+            <area shape="rect" coords="50,50,100,100" title="Mercury" href="../img/sumo-cyco-02.jpg"target="_blank">
+            <area shape="rect" coords="100,100,150,150" title="Venus" href="../img/sumo-cyco-01.jpg" target="_blank">
+        </map>        
+    </article>
+</body>
+</html>

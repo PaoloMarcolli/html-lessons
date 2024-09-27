@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esempio di Layout con Box Model</title>
+    <link rel="stylesheet" href="asset/css/style.css"></link>
+    <link rel="icon" href="asset/img/favicon.ico" type="image/x-icon"></link>
+    <link rel="icon" href="asset/img/favicon-32x32.png" size="32x32" type="image/png"></link>
+    <link rel="icon" href="asset/img/favicon-16x16.png" size="16x16" type="image/png"></link>
+</head>
+<!--Default is static position inpilati-->
+<style>
+    div{
+        margin-bottom: 10px;
+        width: 200px;
+        height: 200px;
+    }
+    #box1{
+        background-color: red;        
+        left: 100px; /* non funzionano se static*/
+        margin-left: 100px;
+        margin-top: 100px;
+    }
+    /*dalla posizione iniziale posso dare uno spostamento*/
+    /* left,top,right funziona solo se relative*/
+    #box2{
+        background-color: green;
+        /*top :200px;*/
+        left: 100px;      
+        top: -100px;  
+        position: relative;
+        /* z-index: -1; */
+    }
+    /*absolute rispetta la posizione del paraent quindi inquesto caso
+    del body per cui 50px sono dal top del browse*/
+    #box3{
+        background-color: blue;
+        position: absolute;
+        top: 70px;
+        left: 150px;
+    }
+    #box4{
+        background-color: #ddd;
+        position: fixed;
+        bottom: 200px;
+        left: 400px;
+    }
+    #parent{
+        position: relative;
+        background-color: yellow;
+
+    }
+</style>
+<body>
+    <!-- Gli elemneti seguentuo il flusso logico in cui sono stati inseriti
+     ma se usiamo absolute l'elemento rimane in una posizione coerente con quella
+     del parente e si svincola da quella logica-->
+    <div id="box1">
+        Primo blocco
+    </div>    
+    <div id="box2">
+        Secondo blocco
+    </div>    
+    <div id="parent">
+        elemento parent 
+        <div id="box3">
+            Terzo blocco
+        </div>    
+    </div>
+    <div id="box4">
+        elemento fisso
+    </div>
+    <p>
+        Ciaoklfjlsdfjsdlfjsldjlkdjdslfjlvjsdljgldflggjdsdljk
+        Ciaoklfjlsdfjsdlfjsldjlkdjdslfjlvjsdljgldflggjdsdljk
+        Ciaoklfjlsdfjsdlfjsldjlkdjdslfjlvjsdljgldflggjdsdljk
+    </p>
+    <p>
+        Ciaoklfjlsdfjsdlfjsldjlkdjdslfjlvjsdljgldflggjdsdljk
+        Ciaoklfjlsdfjsdlfjsldjlkdjdslfjlvjsdljgldflggjdsdljk
+        Ciaoklfjlsdfjsdlfjsldjlkdjdslfjlvjsdljgldflggjdsdljk
+    </p>
+    <p>
+        Ciaoklfjlsdfjsdlfjsldjlkdjdslfjlvjsdljgldflggjdsdljk
+        Ciaoklfjlsdfjsdlfjsldjlkdjdslfjlvjsdljgldflggjdsdljk
+        Ciaoklfjlsdfjsdlfjsldjlkdjdslfjlvjsdljgldflggjdsdljk
+    </p>
+    <p>
+        Ciaoklfjlsdfjsdlfjsldjlkdjdslfjlvjsdljgldflggjdsdljk
+        Ciaoklfjlsdfjsdlfjsldjlkdjdslfjlvjsdljgldflggjdsdljk
+        Ciaoklfjlsdfjsdlfjsldjlkdjdslfjlvjsdljgldflggjdsdljk
+    </p>
+    <p>
+        Ciaoklfjlsdfjsdlfjsldjlkdjdslfjlvjsdljgldflggjdsdljk
+        Ciaoklfjlsdfjsdlfjsldjlkdjdslfjlvjsdljgldflggjdsdljk
+        Ciaoklfjlsdfjsdlfjsldjlkdjdslfjlvjsdljgldflggjdsdljk
+    </p>
+    <p>
+        Ciaoklfjlsdfjsdlfjsldjlkdjdslfjlvjsdljgldflggjdsdljk
+        Ciaoklfjlsdfjsdlfjsldjlkdjdslfjlvjsdljgldflggjdsdljk
+        Ciaoklfjlsdfjsdlfjsldjlkdjdslfjlvjsdljgldflggjdsdljk
+    </p>
+    <p>
+        Ciaoklfjlsdfjsdlfjsldjlkdjdslfjlvjsdljgldflggjdsdljk
+        Ciaoklfjlsdfjsdlfjsldjlkdjdslfjlvjsdljgldflggjdsdljk
+        Ciaoklfjlsdfjsdlfjsldjlkdjdslfjlvjsdljgldflggjdsdljk
+    </p>
+    <p>
+        Ciaoklfjlsdfjsdlfjsldjlkdjdslfjlvjsdljgldflggjdsdljk
+        Ciaoklfjlsdfjsdlfjsldjlkdjdslfjlvjsdljgldflggjdsdljk
+        Ciaoklfjlsdfjsdlfjsldjlkdjdslfjlvjsdljgldflggjdsdljk
+    </p>
+</body>
+</html>

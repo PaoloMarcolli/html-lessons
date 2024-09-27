@@ -1,0 +1,42 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.box {
+    padding: 20px;
+    width: 20px;
+    border: 1px solid red;
+    margin: 20px;
+    height: 200px;
+    width: 200px;
+    background-color: #fffe00;
+}
+li {
+    height: 50px;
+    width: 50px;
+    background-attachment: antiquewhite;
+    list-style-type: none;
+}
+
+.container {
+    border: solid 2px purple;
+}
+
+.one{
+    margin-bottom: 50px;
+    border: 2px solid red;
+}
+
+.two{
+    margin-bottom: 50px;
+    border: 2px solid red;
+}
+.span1 {
+    width: 200px;
+    height: 200px;
+    background: aquamarine;
+    padding-top: 200px;
+    margin-left: 100px;
+    display: block;
+}

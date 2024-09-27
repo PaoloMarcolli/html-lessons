@@ -1,0 +1,91 @@
+body{
+    background-color: whitesmoke;
+}   
+
+nav ul{
+    display: inline;
+}
+nav ul li{
+    display: inline;
+    padding: 20px;
+}
+nav ul li a:focus{
+    color: red;
+}
+nav ul li a:hover{
+    color: red;
+}
+nav ul li a:visited{
+    color: brown;
+}
+nav ul li a:link{
+    text-decoration: none;
+    color: white;
+}
+
+h1.title{
+    font-size: 30px;
+}
+
+p{
+    color: blue;
+}
+
+.example{
+    font-size: 20px;
+}
+
+#main-tile{
+    color: red;
+}
+div p {
+    color: green;
+}
+
+ul > li {
+    list-style-type: none;
+}
+
+h1 + p {
+    margin-top: 0;
+    }
+
+h1 ~ p {
+    color: purple;
+}
+
+a[target] {
+    color: orange;
+}
+
+a[href^="https"] {
+    color: green;
+}
+
+a[href$=".pdf"] {
+    color: red;
+}
+
+a[href*="giorgia"] {
+    color: blue;
+}
+
+button:hover {
+    background-color: yellow;
+}
+
+input:focus {
+    border-color: rgb(255, 0, 0);
+}
+
+#test097 p:nth-child(2) {
+    color: crimson;
+}
+
+#test098 p:first-child {
+    font-weight: bold;
+}
+
+#test099 p:last-child {
+    font-style: italic;
+}
