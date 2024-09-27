@@ -3,4 +3,123 @@ body{
     margin: 15px;
     padding: 0;
     background-color: whitesmoke;
+    margin-bottom: 20%;
+}
+
+
+ .container-flex-row {
+    display: flex;
+    flex-direction: row;
+ }
+ .container-flex-row > .item {
+    background-color: red;
+ }
+
+ .container-flex-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ }
+ .container-flex-row-center > .item {
+    background-color: red;
+ }
+ 
+ .container-flex-row-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+ }
+ .container-flex-row-start > .item {
+    background-color: red;
+ }
+ 
+ .container-flex-row-end {
+    display: flex;
+    flex-direction: row;
+    justify-content:end;
+ }
+ .container-flex-row-end > .item {
+    background-color: red;
+ }
+ 
+ .container-flex-row-space-between {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+ }
+ .container-flex-row-space-between > .item {
+    background-color: red;
+ }
+ .container-flex-row-space-around {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+ }
+ .container-flex-row-space-around > .item {
+    background-color: red;
+ }
+
+ .container-flex-row-space-around-with-height {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    height: 400px;
+    background-color: cyan;
+ }
+ .container-flex-row-space-around-with-height > .item {
+    background-color: red;
+ }
+ .container-flex-row-space-around-with-height-end {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-around;
+    align-items: flex-end;
+    height: 400px;
+    background-color: cyan;
+ }
+ .container-flex-row-space-around-with-height-end > .item {
+    background-color: red;
+ }
+ 
+
+.container-flex-row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+ }
+
+ .container-flex-row-reverse > .item {
+    background-color: green;
+ }
+
+.container-flex-column {
+    display: flex;
+    flex-direction: column;
+
+}
+.container-flex-column > .item {
+    background-color: yellow;
+ }
+
+.container-flex-column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.container-flex-column > .item {
+    background-color: blue;
+ }
+
+.item {
+    padding: 10px;
+    margin: 5px;
+    background-color: red;
+}
+
+.big {
+    flex-grow: 2;
+}
+
+.big-order {
+    flex-grow: 2;
+    order: 1;
 }
