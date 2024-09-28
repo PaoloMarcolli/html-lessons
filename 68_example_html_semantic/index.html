@@ -15,140 +15,43 @@
 </head>
 <body>
     <!--
-        1) Cose un grid container *
-        2) Definire una grid *
-        3) Grid flessibili con l'unita fr : grid-template columns *
-        4) Spazio tra le celle :grid-gap  *
-        5) Repeat *
-        6) La funzione minmax() *
-        7) Tante colonne quante ce nestanno
-        8) Posizionare elementi nella grid
+        “Semantic HTML” refers to the idea that all your HTML markup should convey the underlying meaning of your content—not its appearance. We’ve already been writing semantic HTML (e.g., using <strong> instead of <b>), but there’s a whole set of elements designed for the sole purpose of adding more meaning to the overall layout of a web page. They’re called “sectioning elements”, and they look something like this:
     -->
-    <h1>Vedere da 7.9 in avanti</h1>
-    <h1>Example grid System</h1>
-    <h2>Definire una grid</h2>
-    <p>Per definire una grid bisogna bisogna valorizzare la property <strong>display : grid</strong> nella classe </p>
-    <h2>Grid flessibili con l'unita fr</h2>
-    <ul>
-        <li>
-            <p>Per definire una grid flessibili bisogna bisogna valorizzare la property <strong>grid-template columns : 1fr 1fr 1fr </strong> nella classe </p>
-            <p>Il numero massimo di colonne per pagina è 12 ovvero : <strong> 12 fr</strong> </p>
-            <p>Esempio</p>
-            <div class="container-fr">
-                <div class="box">1</div>
-                <div class="box">2</div>
-                <div class="box">3</div>
-                <div class="box">4</div>
-                <div class="box">5</div>
-                <div class="box">6</div>
-                <div class="box">7</div>
-            </div>
-        </li>
-        <li>
-            <p>Per semplificare quanto sopra si puo anche fare <strong>grid-template columns : repeat(3,1fr) </strong> nella classe </p>
-            <p>Esempio</p>
-            <div class="container-fr-repeat">
-                <div class="box">1</div>
-                <div class="box">2</div>
-                <div class="box">3</div>
-                <div class="box">4</div>
-                <div class="box">5</div>
-                <div class="box">6</div>
-                <div class="box">7</div>
-            </div>
-        </li>
-        <li>
-            <p>Inoltre si puo definire una lunghezza minima e una lunghezza massima valorizzanzodo il repeat come segue <strong>grid-template columns : repeat(3, minmax(200px,auto)); </strong> nella classe </p>
-            <p>Questo genererà una colonna con un lunghezza minimima di 200px al resize del viewport e una estensione alla lunghezza massima quando il viewport occupa tutto lo schermo </p>
-            <p>Esempio</p>
-            <div class="container-fr-repeat-minmax">
-                <div class="box">1</div>
-                <div class="box">2</div>
-                <div class="box">3</div>
-                <div class="box">4</div>
-                <div class="box">5</div>
-                <div class="box">6</div>
-                <div class="box">7</div>
-            </div>
-        </li>
-        <li>
-            <p>Per definire una grid flessibili con la prima colonna che occupa 2/3 della pagina e l'ultima 1/3 bisogna valorizzare la property <strong>grid-template columns : 2fr 1fr </strong> nella classe </p>
-            <p>Esempio</p>
-            <div class="container-fr-2-1">
-                <div class="box">1</div>
-                <div class="box">2</div>
-                <div class="box">3</div>
-                <div class="box">4</div>
-                <div class="box">5</div>
-                <div class="box">6</div>
-                <div class="box">7</div>
-            </div>
-        </li>
-        <li>
-            <p>Per definire la dimensione delle righe bisogna valorizzare la property <strong>grid-template-rows: 200px 100px 500px; </strong> nella classe </p>
-            <p>Esempio</p>
-            <div class="container-fr-columns-rows">
-                <div class="box">1</div>
-                <div class="box">2</div>
-                <div class="box">3</div>
-                <div class="box">4</div>
-                <div class="box">5</div>
-                <div class="box">6</div>
-                <div class="box">7</div>
-            </div>
-        </li>        
-        <li>
-            <p>Per definire la dimensione delle righe in maniera uniforme bisogna valorizzare la property <strong>grid-auto-rows: 200px; </strong> nella classe </p>
-            <p>Esempio</p>
-            <div class="container-fr-columns-auto-rows">
-                <div class="box">1</div>
-                <div class="box">2</div>
-                <div class="box">3</div>
-                <div class="box">4</div>
-                <div class="box">5</div>
-                <div class="box">6</div>
-                <div class="box">7</div>
-            </div>
-        </li>                <li>
-            <p>Per definire la dimensione delle righe in maniera che si adatti al contenuto bisogna valorizzare la property <strong>grid-auto-rows: auto; </strong> nella classe </p>
-            <p>Esempio</p>
-            <div class="container-fr-columns-auto-fitcontent-rows">
-                <div class="box">1</div>
-                <div class="box">2</div>
-                <div class="box">3</div>
-                <div class="box">4</div>
-                <div class="box">5</div>
-                <div class="box">6</div>
-                <div class="box">7</div>
-            </div>
-        </li>        
-    </ul>
-    <h2>Grid con colonne a lunghezza definita</h2>
-    <p>Per definire una grid flessibili bisogna valorizzare la property <strong>grid-template columns : 100px 100px 100px </strong> nella classe </p><br>
-    <p>Esempio</p>
-    <div class="container-manual">
-        <div class="box">1</div>
-        <div class="box">2</div>
-        <div class="box">3</div>
-        <div class="box">4</div>
-        <div class="box">5</div>
-        <div class="box">6</div>
-        <div class="box">7</div>
-    </div>    
-    <h2>Spazio tra le celle :grid-gap</h2>
-    <p>Tra ogni cella c'è uno spazio questo si chiama gutter è possibile variarlo tramite la property <strong>gap : 10px|gap-row : 10px|gap-row : 10px </strong>
-    Come ovvio agiscono rispettivamente su spazio tra righe e colonne o entrambe
-    nella classe </p><br>
-    <p>Esempio</p>
-    <div class="container-gap-50px">
-        <div class="box">1</div>
-        <div class="box">2</div>
-        <div class="box">3</div>
-        <div class="box">4</div>
-        <div class="box">5</div>
-        <div class="box">6</div>
-        <div class="box">7</div>
-    </div>    
-    
+    <header></header>
+        <h1>Benvenuto nel Mondo dell'HTML Semantico</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Chi siamo</a></li>
+                <li><a href="#services">Servizi</a></li>
+                <li><a href="#contact">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <header>
+                <h2>Che cos'è l'HTML Semantico?</h2>
+                <p>Pubblicato il <time datetime="2024-06-10">10 Giugno 2024</time></p>
+            </header>
+            <section>
+                <p>L'HTML semantico si riferisce all'uso di tag HTML che hanno un significato intrinseco, migliorando la leggibilità del codice e l'accessibilità del sito.</p>
+            </section>
+        </article>
+
+
+        <aside>
+            <h3>Articoli Correlati</h3>
+            <ul>
+                <li><a href="#semantic-benefits">Benefici dell'HTML Semantico</a></li>
+                <li><a href="#html5-standards">Standard HTML5</a></li>
+            </ul>
+        </aside>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2024 Lezioni di Web Development</p>
+    </footer>    
 </body>
 </html>
