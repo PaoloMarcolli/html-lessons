@@ -1,0 +1,15 @@
+body{
+    font-family: Roboto, Arial;
+    margin: 15px;
+    padding: 0;
+    background-color: whitesmoke;
+    margin-bottom: 20%;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+}
+.box{
+    background-color: cadetblue;
+}
