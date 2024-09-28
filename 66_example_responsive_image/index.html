@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive image tutorial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="asset/css/style.css"></link>
+    <href rel="icon" href="asset/css/style.css"></href>
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../img/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="../img/favicon-32x32.png" sizes="32x32" type="image/png">
+</head>
+<body>
+    <h1>Esempio di Immagini Resposive</h1>
+    <h2>Le immagini responsive sono un elemento essenziale per garantire una buona esperienza utente su dispositivi con dimensioni dello schermo e risoluzioni diverse</h2>
+    <p>
+        Questo capitolo del Corso ti guiderà attraverso i vari metodi per rendere le immagini del tuo sito web responsive.Parlando di design responsive, abbiamo imparato a utilizzare le media query per creare layout separati per dispositivi mobili, tablet e desktop. Ora vogliamo fare lo stesso con le immagini. Proprio come le media query ci permettono di presentare condizionatamente diverse regole CSS, vogliamo visualizzare diverse immagini in base al dispositivo dell'utente.
+    </p>
+    <h2>Le immagini hanno dimensioni intrinseche.</h2>
+    <p>
+        Non possiamo allungare una foto di 500×250 pixel oltre i 500 pixel di larghezza senza che diventi pixelata. I display retina e i dispositivi mobili complicano ulteriormente le cose.
+        Per rendere le nostre immagini responsive, dobbiamo considerare tre aspetti:
+    </p>
+    <ul>
+        <li>Le dimensioni del dispositivo</li>
+        <li>Le dimensioni dell'immagine</li>
+        <li>La risoluzione dello schermo del dispositivo</li>
+    </ul>
+    <p>
+        Per sperimentare con le immagini responsive, abbiamo bisogno di un sito web responsive con cui lavorare. In questo capitolo, costruiremo una pagina web di esempio aggiungendo due immagini che cambieranno a seconda del dispositivo dell'utente.
+    </p>
+    <h2>Schermi retina</h2>
+    <div class='section content'>
+        <img class='illustration' src='images/illustration.svg' style='max-width: 500px'/>
+    </div>
+    <h2>Immagini SVG responsive</h2>
+    <div class='section content'>
+        <img class='illustration' src='images/illustration.svg' style='max-width: 500px'/>
+    </div>
+    <h2>Immagini raster responsive (PNG, GIF, JPG)</h2>
+    <div class='illustration'>
+        <img src='images/illustration-small.png'
+             srcset='images/illustration-small.png 1x,
+                     images/illustration-big.png 2x'
+             style='max-width: 500px'/>
+      </div>
+      <h2>Ottimizzare immagini per la larghezza dello schermo</h2>
+      <div class='section header'>
+        <div class='photo'>
+          <img src='images/photo-small.jpg'
+               srcset='images/photo-big.jpg 2000w,
+                       images/photo-small.jpg 1000w'
+               sizes='(min-width: 960px) 960px,
+                      100vw'/>
+        </div>
+      </div>
+      <h2>Direzione artistica con <picture></h2>
+        <div class='section header'>
+            <div class='photo'>
+              <picture>
+                <source media='(min-width: 401px)'
+                        srcset='images/photo-big.jpg'/>
+                <source media='(max-width: 400px)'
+                        srcset='images/photo-tall.jpg'/>
+                <img src='images/photo-small.jpg'/>
+              </picture>
+            </div>
+          </div>
+    </body>
+</html>
