@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive image tutorial</title>
+    <title>Grid system tutorial</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    
@@ -14,7 +14,80 @@
     <link rel="icon" href="../img/favicon-32x32.png" sizes="32x32" type="image/png">
 </head>
 <body>
-    <div class="container">
+    <!--
+        1) Cose un grid container
+        2) Definire una grid
+        3) Grid flessibili con l'unita fr : grid-template columns
+        4) Spazio tra le celle :grid-gap  
+        5) Repeat
+        6) La funzione minmax()
+        7) Tante colonne quante ce nestanno
+        8) Posizionare elementi nella grid
+    -->
+    <h1>Example grid System</h1>
+    <h2>Definire una grid</h2>
+    <p>Per definire una grid bisogna bisogna valorizzare la property <strong>display : grid</strong> nella classe </p>
+    <h2>Grid flessibili con l'unita fr</h2>
+    <ul>
+        <li>
+            <p>Per definire una grid flessibili bisogna bisogna valorizzare la property <strong>grid-template columns : 1fr 1fr 1fr </strong> nella classe </p>
+            <p>Il numero massimo di colonne per pagina è 12 ovvero : <strong> 12 fr</strong> </p>
+            <p>Esempio</p>
+            <div class="container-fr">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+                <div class="box">4</div>
+                <div class="box">5</div>
+                <div class="box">6</div>
+                <div class="box">7</div>
+            </div>
+        </li>
+        <li>
+            <p>Per semplificare quanto sopra si puo anche fare <strong>grid-template columns : repeat(3,1fr) </strong> nella classe </p>
+            <p>Esempio</p>
+            <div class="container-fr-repeat">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+                <div class="box">4</div>
+                <div class="box">5</div>
+                <div class="box">6</div>
+                <div class="box">7</div>
+            </div>
+        </li>
+        <li>
+            <p>Inoltre si puo definire una lunghezza minima e una lunghezza massima valorizzanzodo il repeat come segue <strong>grid-template columns : repeat(3, minmax(200px,auto)); </strong> nella classe </p>
+            <p>Questo genererà una colonna con un lunghezza minimima di 200px al resize del viewport e una estensione alla lunghezza massima quando il viewport occupa tutto lo schermo </p>
+            <p>Esempio</p>
+            <div class="container-fr-repeat-minmax">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+                <div class="box">4</div>
+                <div class="box">5</div>
+                <div class="box">6</div>
+                <div class="box">7</div>
+            </div>
+        </li>
+        <li>
+            <p>Per definire una grid flessibili con la prima colonna che occupa 2/3 della pagina e l'ultima 1/3 bisogna valorizzare la property <strong>grid-template columns : 2fr 1fr </strong> nella classe </p>
+            <p>Esempio</p>
+            <div class="container-fr-2-1">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+                <div class="box">4</div>
+                <div class="box">5</div>
+                <div class="box">6</div>
+                <div class="box">7</div>
+            </div>
+        </li>
+    </ul>
+    <h2>Grid con colonne a lunghezza definita</h2>
+    <p>Per definire una grid flessibili bisogna valorizzare la property <strong>grid-template columns : 100px 100px 100px </strong> nella classe </p><br>
+    <p>Esempio</p>
+    <div class="container-manual">
         <div class="box">1</div>
         <div class="box">2</div>
         <div class="box">3</div>
@@ -22,6 +95,20 @@
         <div class="box">5</div>
         <div class="box">6</div>
         <div class="box">7</div>
-    </div>
+    </div>    
+    <h2>Spazio tra le celle :grid-gap</h2>
+    <p>Tra ogni cella c'è uno spazio questo si chiama gutter è possibile variarlo tramite la property <strong>gap : 10px|gap-row : 10px|gap-row : 10px </strong>
+    Come ovvio agiscono rispettivamente su spazio tra righe e colonne o entrambe
+    nella classe </p><br>
+    <p>Esempio</p>
+    <div class="container-gap-50px">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+    </div>    
 </body>
 </html>

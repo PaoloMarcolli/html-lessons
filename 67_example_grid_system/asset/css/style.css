@@ -1,15 +1,42 @@
 body{
     font-family: Roboto, Arial;
     margin: 15px;
+    font-size: smaller;
     padding: 0;
     background-color: whitesmoke;
     margin-bottom: 20%;
 }
-.container{
+.container-fr{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 10px;
+    gap: 10px;
+}
+.container-fr-repeat{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.container-fr-repeat-minmax{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px,auto));
+    gap: 10px;
+}
+.container-manual{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    /* chiaramente grid-template-columns: 100px 300px 500px; */
+    gap: 10px;
+}
+.container-fr-2-1{
+    display: grid;
+    grid-template-columns: 2fr 1fr ;
+    gap: 10px;
+}
+.container-gap-50px{
+    display: grid;
+    grid-template-columns: 2fr 1fr ;
+    gap: 15px;
 }
 .box{
-    background-color: cadetblue;
+    background-color: lightblue;
 }
