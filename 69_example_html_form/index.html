@@ -1,55 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid system tutorial</title>
+    <title>Form tutorial</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="asset/css/style.css"></link>
-    <href rel="icon" href="asset/css/style.css"></href>
-    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="../img/favicon-16x16.png" sizes="16x16" type="image/png">
-    <link rel="icon" href="../img/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" >
+    <link rel="stylesheet" href="asset/css/style.css"></link>    
+    <link rel="icon" href="asset/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="asset/img/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="asset/img/favicon-32x32.png" sizes="32x32" type="image/png">
 </head>
 <body>
-    <!--
-        “Semantic HTML” refers to the idea that all your HTML markup should convey the underlying meaning of your content—not its appearance. We’ve already been writing semantic HTML (e.g., using <strong> instead of <b>), but there’s a whole set of elements designed for the sole purpose of adding more meaning to the overall layout of a web page. They’re called “sectioning elements”, and they look something like this:
-    -->
-    <header></header>
-        <h1>Benvenuto nel Mondo dell'HTML Semantico</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">Chi siamo</a></li>
-                <li><a href="#services">Servizi</a></li>
-                <li><a href="#contact">Contatti</a></li>
-            </ul>
-        </nav>
+    <header>
+    </header>
+        <h1>Tutorial dell'elemento Form </h1>
+        <div class="illustration">
+            <img src='asset/img/header-image.png'
+            srcset='asset/img/header-image.png 1x,
+            asset/img/header-image.png 2x'
+            style='max-width: 500px'/>
+        </div>
     </header>
     <main>
         <article>
-            <header>
-                <h2>Che cos'è l'HTML Semantico?</h2>
-                <p>Pubblicato il <time datetime="2024-06-10">10 Giugno 2024</time></p>
-            </header>
             <section>
-                <p>L'HTML semantico si riferisce all'uso di tag HTML che hanno un significato intrinseco, migliorando la leggibilità del codice e l'accessibilità del sito.</p>
+                <p><strong>I form, o moduli, consentono agli utenti di interagire direttamente con il sito, inserendo informazioni che possono essere inviate e processate.</strong> I form sono essenziali per una vasta gamma di funzionalità, come la registrazione di nuovi utenti, l'invio di commenti, la compilazione di sondaggi e l'acquisto di prodotti online.</p>
+                <p>Un form tipico è composto da vari elementi come campi di testo, pulsanti di opzione, caselle di controllo, menu a tendina e pulsanti di invio. Questi elementi raccolgono dati dagli utenti in un formato strutturato che può essere facilmente elaborato dal server del sito web.</p>
             </section>
+            <section>
+                <p><strong>L'importanza dei form risiede nella loro capacità di trasformare un sito web statico in un'applicazione interattiva e dinamica.</strong></p>
+                <p>Permettono di creare un canale di comunicazione bidirezionale tra l'utente e il sito, migliorando l'esperienza utente e rendendo possibile la personalizzazione dei contenuti in base alle esigenze specifiche di ogni visitatore.</p>
+                <p>Inoltre, una buona progettazione dei form può migliorare notevolmente l'usabilità e l'accessibilità del sito, rendendo più semplice e piacevole per gli utenti completare le azioni desiderate.</p>
+                <p>Guarda questo video che spiega cosa sono i form e come realizzarli.</p>
+            </section>
+            <section>
+                <p>Prosegui guardando questo tutorial su come creare un form “contattami”.</p>
+            </section>
+            <section>
+                <a href="https://internetingishard.netlify.app/html-and-css/forms/index.html"><p>Se volessi approfondire ulteriormente, ti consigliamo di leggere questa risorsa opzionale.</p></a>
+            </section>        
         </article>
-
-
-        <aside>
-            <h3>Articoli Correlati</h3>
-            <ul>
-                <li><a href="#semantic-benefits">Benefici dell'HTML Semantico</a></li>
-                <li><a href="#html5-standards">Standard HTML5</a></li>
-            </ul>
-        </aside>
     </main>
-
-
     <footer>
         <p>&copy; 2024 Lezioni di Web Development</p>
     </footer>    
