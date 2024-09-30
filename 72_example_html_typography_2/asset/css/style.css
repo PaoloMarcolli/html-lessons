@@ -6,17 +6,58 @@ body{
     padding: 0;
 }
 
-#lesson > p,
-#lesson > form,
-#lesson > input,
-#lesson > label,
-#lesson > button{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight:400!important;
-    font-size: 12px;
-    padding: 0;
-}
-.illustration {
+.content {
     width: 100%;
-    max-width: 500px; /* Limita la larghezza massima dell'immagine */
+  }
+
+.illustration {
+    height: auto;
+    max-width: 100%; /* Limita la larghezza massima dell'immagine */
+  }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    justify-content: start;
+  }
+
+.right {
+    text-align: right;
+}   
+
+.left {
+    text-align: left;
+    background-color: bisque;
+    padding: 10px;
+}   
+
+.center {
+    text-align: center;
+    background-color: bisque;
+    padding: 10px;
+}   
+
+.justify {
+    text-align: justify;
+    background-color: bisque;
+    padding: 10px;
+}   
+
+figcaption {
+    display: none;
+  }
+  @media only screen and (min-width: 900px) {
+    figure {
+      position: relative;
+    }
+    figcaption {
+      display: block;
+      font-style: italic;
+      text-align: right;
+      background-color: #FFFFFF;
+      position: absolute;
+      left: -220px;
+      width: 200px;
+    }
   }

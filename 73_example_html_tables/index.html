@@ -24,7 +24,7 @@
 <body>
     <header>
     </header>
-        <h1>Tutorial dell'elemento Form </h1>
+        <h1>Tutorial tabelle </h1>
         <div class="illustration">
             <img src='asset/img/header-image.png'
             srcset='asset/img/header-image.png 1x,
@@ -35,105 +35,251 @@
     <main>
         <article>
             <section>
-                <p><strong>I form, o moduli, consentono agli utenti di interagire direttamente con il sito, inserendo informazioni che possono essere inviate e processate.</strong> I form sono essenziali per una vasta gamma di funzionalità, come la registrazione di nuovi utenti, l'invio di commenti, la compilazione di sondaggi e l'acquisto di prodotti online.</p>
-                <p>Un form tipico è composto da vari elementi come campi di testo, pulsanti di opzione, caselle di controllo, menu a tendina e pulsanti di invio. Questi elementi raccolgono dati dagli utenti in un formato strutturato che può essere facilmente elaborato dal server del sito web.</p>
+                <p><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics">Fonte immagine</a></p>  
+                <p>Le tabelle in HTML sono utilizzate per organizzare i dati in righe e colonne. Sono ideali per presentare informazioni tabellari, come orari, report finanziari, listini prezzi e molto altro.</p>
+                <p>In questo capitolo, esploreremo la creazione di tabelle con HTML e la loro formattazione con CSS per renderle visivamente accattivanti e facilmente leggibili.</p>
             </section>
             <section>
-                <p><strong>L'importanza dei form risiede nella loro capacità di trasformare un sito web statico in un'applicazione interattiva e dinamica.</strong></p>
-                <p>Permettono di creare un canale di comunicazione bidirezionale tra l'utente e il sito, migliorando l'esperienza utente e rendendo possibile la personalizzazione dei contenuti in base alle esigenze specifiche di ogni visitatore.</p>
-                <p>Inoltre, una buona progettazione dei form può migliorare notevolmente l'usabilità e l'accessibilità del sito, rendendo più semplice e piacevole per gli utenti completare le azioni desiderate.</p>
-                <p>Guarda la lezione sotto che spiega cosa sono i form e come realizzarli.</p>
+                <header><h3>Struttura base di una tabella HTML</h3></header>
+                <p>Una tabella HTML è definita utilizzando l'elemento <mark>&lt;table&gt;</mark></p>
+                <ul>
+                   <li><mark>&lt;theader&gt;</mark>: contiene l'intestazione della tabella.</li>         
+                   <li><mark>&lt;tbody&gt;</mark>: contiene il corpo della tabella, dove sono inseriti i dati..</li>         
+                   <li><mark>&lt;tr&gt;</mark>:  definisce una riga della tabella.</li>         
+                   <li><mark>&lt;th&gt;</mark>: definisce una cella di intestazione della tabella.</li>         
+                   <li><mark>&lt;td&gt;</mark>:  definisce una cella di dati della tabella.</li>         
+                </ul>
+                <p>Vediamo un esempio di una tabella di base.</p>
+                <pre>
+                    <code>
+                        html: 
+
+                        &lt;table&gt;
+                        &lt;thead&gt;
+                            &lt;tr&gt;
+                                &lt;th&gt;Nome&lt;/th&gt;
+                                &lt;th&gt;Età&lt;/th&gt;
+                                &lt;th&gt;Città&lt;/th&gt;
+                            &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;Mario Rossi&lt;/td&gt;
+                                &lt;td&gt;30&lt;/td&gt;
+                                &lt;td&gt;Roma&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;Luigi Bianchi&lt;/td&gt;
+                                &lt;td&gt;25&lt;/td&gt;
+                                &lt;td&gt;Milano&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                    &lt;/table&gt;
+                    </code>
+                </pre>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Età</th>
+                            <th>Città</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mario Rossi</td>
+                            <td>30</td>
+                            <td>Roma</td>
+                        </tr>
+                        <tr>
+                            <td>Luigi Bianchi</td>
+                            <td>25</td>
+                            <td>Milano</td>
+                        </tr>
+                    </tbody>
+                </table>                
             </section>
             <section>
-                <header><h2>Form</h2></header>
-                <article id="lesson" >
-                    <p>Potrebbero essere moduli di contatti e piu' in generale qualunque sezione per raccogliere dati dell'utente</p>
-                    <p>Esempio</p>
-                    <form action="inserimento_dati.php" method="post">
-                        <fieldset> 
-                            <legend >Dati Anagrafici</legend>
-                            <label for="txName">Nome</label>
-                            <input type="text" name="txName" placeholder="Nome" required>
-                            <br>
-                            <label for="txCognome">Cognome</label>
-                            <input type="text" name="txCognome" placeholder="Cognome" required>
-                            <br>
-                            <label for="txCodiceFiscale">Codice Fiscale</label>
-                            <input type="text" name="txCognome" placeholder="Cognome" required length="16">
-                            <br>
-                            <label for="selProvincia">Provincia</label>
-                            <select name="selProvincia" multiple required>
-                                <option value="">Seleziona</option>
-                                <option value="MI">MI</option>
-                                <option value="CO">CO</option>
-                                <option value="VA">VA</option>  
-                            </select>
-                            <br>
-                            <input type="date">
-                            <br>
-                            <label for="txEmail">Email</label>
-                            <input type="email" id="txEmail">
-                        </fieldset>
-                        <fieldset> 
-                            <legend >Dati Secondari</legend>
-                            <span>Interessi</span>
-                            <div>
-                                <input type="checkbox" id="txHobbies" >
-                                <label for="txHobbies">Hobbies</label>
-                                <input type="checkbox" id="txHobbies" >
-                                <label for="txHobbies">Hobbies</label>
-                                <input type="checkbox" id="txHobbies" >
-                                <label for="txHobbies">Hobbies</label>
-                            </div>
-                            <span>Colore preferito</span>
-                            <div>
-                                <input type="color" id="txColor">
-                            </div>
-                            <span style="margin-top: 50px;">File aggiuntivo</span>
-                            <div>
-                                <input type="file" id="txFile" multiple>
-                            </div>
-                            <span style="margin-top: 10px;">Genere</span>
-                            <div>
-                                <input type="radio" name="rdoSesso" value="M">Maschio
-                                <input type="radio" name="rdoSesso" value="F">Femmina
-                            </div>
-                        </fieldset>
-                        <fieldset> 
-                            <legend >Altri esempi di input</legend>
-                            <span>
-                            <label for="txName2">Nome-Autocomplete</label>
-                            <div>
-                                <input list="txName2" >
-                                <datalist id="txName2">
-                                    <option value="Luca">
-                                    <option value="Marco">
-                                    <option value="Giovanni">
-                                </datalist>
-                            </div>
-                            <span>
-                            <label for="txtRemarks">Commenti</label>
-                            <div>
-                                <textarea name="txtRemarks"></textarea>
-                            </div>
-                            <span>
-                            <label for="txtPassword">Password</label>
-                            <div>
-                                <input type="password" id="txtPassword">
-                            </div>
-                        </fieldset>
-                        <br>
-                        <input type="submit" value="Invia">
-                        <input type="reset" value="Resetta">
-                    </form>
-                </article>
+                <header><h3>Formattazione delle tabelle con CSS</h3></header>
+                <p>Per rendere le tabelle più leggibili e visivamente accattivanti, possiamo utilizzare CSS. </p>
+                <p>Ecco alcune proprietà CSS comuni per formattare le tabelle:
+                </p>
+                <ul>
+                    <li>border: aggiunge bordi alle celle della tabella.</li>
+                    <li>padding: aggiunge spazio interno alle celle.</li>
+                    <li>text-align: allinea il testo nelle celle.</li>
+                    <li>background-color: cambia il colore di sfondo delle celle.</li>
+                    <li>nth-child: selettore avanzato per applicare stili a righe specifiche.</li>
+                </ul>
+                <p>Vediamo un esempio di formattazione CSS per una tabella.</p>
+                <pre>
+                    <code>
+                        css:
+
+                        table {
+                          width: 100%;
+                          border-collapse: collapse; /* Elimina lo spazio tra i bordi delle celle */
+                        }
+                        
+                        th, td {
+                          border: 1px solid #dddddd;
+                          text-align: left;
+                          padding: 8px;
+                        }
+                        tr:nth-child(even) {
+                          background-color: #f2f2f2; /* Colore di sfondo per le righe pari */
+                        }
+                        th {
+                          background-color: #4CAF50;
+                          color: white;
+                        }
+                    </code>
+                </pre>
+                <table class="table2">
+                    <thead class="table2">
+                        <tr class="table2">
+                            <th class="table2">Nome</th>
+                            <th class="table2">Età</th>
+                            <th class="table2">Città</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table2">
+                        <tr class="table2">
+                            <td class="table2">Mario Rossi</td>
+                            <td class="table2">30</td>
+                            <td class="table2">Roma</td>
+                        </tr>
+                        <tr class="table2">
+                            <td class="table2">Luigi Bianchi</td>
+                            <td class="table2">25</td>
+                            <td class="table2">Milano</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
             <section>
-                <p>Prosegui guardando questo tutorial su come creare un form “contattami”.</p>
+                <header><h3>Tabelle responsive</h3></header>
+                <p>Le tabelle possono diventare difficili da leggere su dispositivi mobili.</p>
+                <p><strong>Per rendere una tabella responsive, possiamo utilizzare CSS per farla scorrere orizzontalmente su schermi più piccoli.</strong></p>
+                <p>Vediamo un esempio di tabella responsive.</p>
+                <pre>
+                    <code>
+                        css:
+
+                        table {
+                          width: 100%;
+                          border-collapse: collapse;
+                        }
+                        th, td {
+                          border: 1px solid #dddddd;
+                          text-align: left;
+                          padding: 8px;
+                        }
+                        tr:nth-child(even) {
+                          background-color: #f2f2f2;
+                        }
+                        th {
+                          background-color: #4CAF50;
+                          color: white;
+                        }
+                        @media screen and (max-width: 600px) {
+                          table {
+                            width: 100%;
+                            display: block;
+                            overflow-x: auto; /* Aggiunge uno scorrimento orizzontale */
+                          }
+                        }
+                    </code>
+                </pre>
+                <p>Le tabelle responsive sono utilizzate per organizzare informazioni con una larga quantità di colonne e righe.</p>
+                <table class="table1">
+                    <thead class="table1">
+                      <tr class="table1">
+                        <th class="table1">Nome</th>
+                        <th class="table1">Età</th>
+                        <th class="table1">Città</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table1">
+                      <tr class="table1">
+                        <td class="table1">Mario Rossi</td>
+                        <td class="table1">30</td>
+                        <td class="table1">Roma</td>
+                      </tr>
+                      <tr class="table1">
+                        <td class="table1">Luigi Bianchi</td>
+                        <td class="table1">25</td>
+                        <td class="table1">Milano</td>
+                      </tr>
+                    </tbody>
+                  </table>                
             </section>
             <section>
-                <a href="https://internetingishard.netlify.app/html-and-css/forms/index.html"><p>Se volessi approfondire ulteriormente, ti consigliamo di leggere questa risorsa opzionale.</p></a>
-            </section>        
+                <header><h3>Tabelle complesse</h3></header>
+                <p>Le tabelle possono contenere intestazioni di colonna e di riga, celle che attraversano più righe o colonne, e altro ancora.</p>
+                <p>Analizziamo un esempio di tabella con celle che attraversano più colonne e righe.</p>
+                <pre>
+                    <code>
+                        html :
+
+                        &lt;table&gt;
+                        &lt;thead&gt;
+                          &lt;tr&gt;
+                            &lt;th&gt;Nome&lt;/th&gt;
+                            &lt;th&gt;Età&lt;/th&gt;
+                            &lt;th&gt;Città&lt;/th&gt;
+                            &lt;th rowspan=&quot;2&quot;&gt;Note&lt;/th&gt; &lt;!-- Cell che attraversa due righe --&gt;
+                          &lt;/tr&gt;
+                          &lt;tr&gt;
+                            &lt;th colspan=&quot;2&quot;&gt;Informazioni Personali&lt;/th&gt; &lt;!-- Cell che attraversa due colonne --&gt;
+                            &lt;th&gt;Contatti&lt;/th&gt;
+                          &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                          &lt;tr&gt;
+                            &lt;td&gt;Mario Rossi&lt;/td&gt;
+                            &lt;td&gt;30&lt;/td&gt;
+                            &lt;td&gt;Roma&lt;/td&gt;
+                            &lt;td rowspan=&quot;2&quot;&gt;Nessuna nota&lt;/td&gt; &lt;!-- Cell che attraversa due righe --&gt;
+                          &lt;/tr&gt;
+                          &lt;tr&gt;
+                            &lt;td&gt;Luigi Bianchi&lt;/td&gt;
+                            &lt;td&gt;25&lt;/td&gt;
+                            &lt;td&gt;Milano&lt;/td&gt;
+                          &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                      &lt;/table&gt;                     
+                    </code>
+                </pre>
+                <p>Ecco un esempio di tabella con celle che attraversano più colonne e righe.</p>
+                <table class="table1">
+                    <thead class="table1">
+                      <tr class="table1">
+                        <th class="table1">Nome</th>
+                        <th class="table1">Età</th>
+                        <th class="table1">Città</th>
+                        <th class="table1" rowspan="2">Note</th> <!-- Cell che attraversa due righe -->
+                      </tr>
+                      <tr class="table1">
+                        <th colspan="2">Informazioni Personali</th> <!-- Cell che attraversa due colonne -->
+                        <th class="table1">Contatti</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table1">
+                      <tr class="table1">
+                        <td class="table1">Mario Rossi</td>
+                        <td class="table1">30</td>
+                        <td class="table1">Roma</td>
+                        <td class="table1" rowspan="2">Nessuna nota</td> <!-- Cell che attraversa due righe -->
+                      </tr>
+                      <tr class="table1">
+                        <td class="table1">Luigi Bianchi</td>
+                        <td class="table1">25</td>
+                        <td class="table1">Milano</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </section>
         </article>
     </main>
     <footer>
