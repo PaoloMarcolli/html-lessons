@@ -20,266 +20,160 @@
             <img src='asset/img/header-image.png'
             srcset='asset/img/header-image.png 1x,
             asset/img/header-image.png 2x'
-            style='max-width: 500px'/>
+            style='width: 100%;height: auto;'/>
         </div>
     </header>
     <main>
-        <article>
-            <section>
-                <p><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics">Fonte immagine</a></p>  
-                <p>Le tabelle in HTML sono utilizzate per organizzare i dati in righe e colonne. Sono ideali per presentare informazioni tabellari, come orari, report finanziari, listini prezzi e molto altro.</p>
-                <p>In questo capitolo, esploreremo la creazione di tabelle con HTML e la loro formattazione con CSS per renderle visivamente accattivanti e facilmente leggibili.</p>
-            </section>
-            <section>
-                <header><h3>Struttura base di una tabella HTML</h3></header>
-                <p>Una tabella HTML è definita utilizzando l'elemento <mark>&lt;table&gt;</mark></p>
-                <ul>
-                   <li><mark>&lt;theader&gt;</mark>: contiene l'intestazione della tabella.</li>         
-                   <li><mark>&lt;tbody&gt;</mark>: contiene il corpo della tabella, dove sono inseriti i dati..</li>         
-                   <li><mark>&lt;tr&gt;</mark>:  definisce una riga della tabella.</li>         
-                   <li><mark>&lt;th&gt;</mark>: definisce una cella di intestazione della tabella.</li>         
-                   <li><mark>&lt;td&gt;</mark>:  definisce una cella di dati della tabella.</li>         
-                </ul>
-                <p>Vediamo un esempio di una tabella di base.</p>
-                <pre>
-                    <code>
-                        html: 
+      <article>
+        <p><strong>La SEO (Search Engine Optimization) è l'insieme di tecniche e strategie volte a migliorare la visibilità di un sito web sui motori di ricerca come Google, Bing e Yahoo.</strong> L'obiettivo principale della SEO è ottenere per il sito un posizionamento più alto nei risultati di ricerca organici, aumentando così il traffico verso il sito web</p>
+        <p>La SEO si divide in due principali categorie: </p>
+        <ul>
+              <li><strong>SEO on-page</strong>, che riguarda l'ottimizzazione di elementi all'interno del sito web stesso.</li>         
+              <li><strong>SEO off-page</strong>, che riguarda le attività svolte al di fuori del sito web, come il link building.</li>         
+        </ul>
+        <p>Per fare SEO in modo efficace, è necessario considerare diversi aspetti e seguire una serie di pratiche ottimali.</p>
+        <p>Entriamo più nel dettaglio delle principali attività SEO.</p>
+        <section>
+          <header><h2>Ottimizzazione on-page</h2></header>
+          <p><strong>L'ottimizzazione on-page riguarda la modifica e il miglioramento di vari elementi all'interno delle pagine web</strong> 
+          per renderle più appetibili ai motori di ricerca.  
+          </p>
+          <section>
+            <header><h3>Titoli e meta descrizioni</h3></header>
+            <ul>  
+              <li><strong>Tag <mark>title</mark></strong>: il tag <mark>title</mark> è un elemento HTML fondamentale per l'ottimizzazione on-page che definisce il titolo di una pagina web. Questo titolo appare nella barra del titolo del browser e nei risultati dei motori di ricerca come link cliccabile. È uno degli elementi più importanti per il SEO, poiché influisce direttamente sul ranking della pagina. Dovrebbe essere unico per ogni pagina, contenere la parola chiave principale (le parole chiave sono parole e frasi che gli utenti cercano nei motori di ricerca relative al tuo business) e avere una lunghezza compresa tra 50-60 caratteri.</li>
+              <li><strong>Meta description</strong>: la meta description è un elemento HTML che fornisce una breve descrizione del contenuto di una pagina web. Questa descrizione appare nei risultati dei motori di ricerca sotto il titolo della pagina e l'URL. Dovrebbe essere descrittiva, contenere parole chiave pertinenti e avere una lunghezza massima di 160 caratteri.</li>
+            </ul>
+            <p>Vediamo un esempio.</p>
+            <pre>
+              <code>
+                html:
+                &lt;title&gt;Guida Completa alla SEO per Principianti | Ottimizza il Tuo Sito&lt;/title&gt;
+                &lt;meta name="description" content="Scopri come ottimizzare il tuo sito web per i motori di ricerca con la nostra guida completa alla SEO per principianti."&gt
+              </code>
+            </pre>
+          </section>
+          <section>
+            <header><h3>Intestazioni (heading)</h3></header>
+            <p>Ci sono vari tipi di intestazioni:</p>
+            <ul>  
+              <li><strong>H1</strong>:  dovrebbe contenere la parola chiave principale e descrivere chiaramente il contenuto della pagina.</li>
+              <li><strong>H2</strong> e <strong>H3</strong>: utilizzati per suddividere il contenuto di una pagina in sezioni, migliorando la leggibilità e l'organizzazione.</li>
+            </ul>
+            <p>Vediamo un esempio.</p>
+            <pre>
+              <code>
+                html:
 
-                        &lt;table&gt;
-                        &lt;thead&gt;
-                            &lt;tr&gt;
-                                &lt;th&gt;Nome&lt;/th&gt;
-                                &lt;th&gt;Età&lt;/th&gt;
-                                &lt;th&gt;Città&lt;/th&gt;
-                            &lt;/tr&gt;
-                        &lt;/thead&gt;
-                        &lt;tbody&gt;
-                            &lt;tr&gt;
-                                &lt;td&gt;Mario Rossi&lt;/td&gt;
-                                &lt;td&gt;30&lt;/td&gt;
-                                &lt;td&gt;Roma&lt;/td&gt;
-                            &lt;/tr&gt;
-                            &lt;tr&gt;
-                                &lt;td&gt;Luigi Bianchi&lt;/td&gt;
-                                &lt;td&gt;25&lt;/td&gt;
-                                &lt;td&gt;Milano&lt;/td&gt;
-                            &lt;/tr&gt;
-                        &lt;/tbody&gt;
-                    &lt;/table&gt;
-                    </code>
-                </pre>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Nome</th>
-                            <th>Età</th>
-                            <th>Città</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Mario Rossi</td>
-                            <td>30</td>
-                            <td>Roma</td>
-                        </tr>
-                        <tr>
-                            <td>Luigi Bianchi</td>
-                            <td>25</td>
-                            <td>Milano</td>
-                        </tr>
-                    </tbody>
-                </table>                
-            </section>
-            <section>
-                <header><h3>Formattazione delle tabelle con CSS</h3></header>
-                <p>Per rendere le tabelle più leggibili e visivamente accattivanti, possiamo utilizzare CSS. </p>
-                <p>Ecco alcune proprietà CSS comuni per formattare le tabelle:
-                </p>
-                <ul>
-                    <li>border: aggiunge bordi alle celle della tabella.</li>
-                    <li>padding: aggiunge spazio interno alle celle.</li>
-                    <li>text-align: allinea il testo nelle celle.</li>
-                    <li>background-color: cambia il colore di sfondo delle celle.</li>
-                    <li>nth-child: selettore avanzato per applicare stili a righe specifiche.</li>
-                </ul>
-                <p>Vediamo un esempio di formattazione CSS per una tabella.</p>
-                <pre>
-                    <code>
-                        css:
+                &lt;h1&gt;Guida Completa alla SEO per Principianti&lt;/h1&gt;
+                &lt;h2&gt;Cos'è la SEO?&lt;/h2&gt;
+                &lt;h3&gt;Introduzione alla SEO On-Page&lt;/h3&gt;
+              </code>
+            </pre>     
+            <p>Eccco il risultato</p>       
+            <h1>Guida Completa alla SEO per Principianti</h1>
+            <h2>Cos'è la SEO?</h2>
+            <h3>Introduzione alla SEO On-Page</h3>            
+          </section>
+          <section>
+            <header><h3>Contenuti</h3></header>
+            <p>Ci sono vari tipi di intestazioni:</p>
+            <ul>  
+              <li><strong>Qualità</strong>: il contenuto dovrebbe essere informativo, originale e pertinente.</li>
+              <li><strong>Lunghezza</strong>: le pagine con contenuti più lunghi tendono a posizionarsi meglio nei risultati di ricerca.</li>
+              <li><strong>Parole chiave</strong>: utilizza le parole chiave in modo naturale nel testo, nei sottotitoli e nelle immagini.</li>              
+            </ul>
+          </section>
+          <section>
+            <header><h3>Immagini</h3></header>
+            <p>Le immagini dovrebbero presentare le seguenti caratteristiche:</p>
+            <ul>  
+              <li><strong>Alt Text</strong>: descrive l'immagine e dovrebbe contenere la parola chiave principale.</li>
+              <li><strong>Nome del file</strong>: dovrebbe essere descrittivo e includere parole chiave.</li>
+            </ul>
+            <p>Vediamo un esempio.</p>
+            <pre>
+              <code>
+                html:
+                &lt;img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo"&gt;
+              </code>
+            </pre>
+            <p>Eccco il risultato</p>
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+          </section>
+          <section>
+            <header><h3>URL</h3></header>
+            <p>Gli URL dovrebbero presentare le seguenti caratteristiche:</p>
+            <ul>  
+              <li><strong>Struttura</strong>: l’URL dovrebbero essere brevi, descrittivi e contenere parole chiave.</li>
+              <li><strong>Separazione</strong>: utilizza i trattini per separare le parole.</li>
+            </ul>
+            <p>Vediamo un esempio.</p>
+            <pre>
+              <code>
+                html:
 
-                        table {
-                          width: 100%;
-                          border-collapse: collapse; /* Elimina lo spazio tra i bordi delle celle */
-                        }
-                        
-                        th, td {
-                          border: 1px solid #dddddd;
-                          text-align: left;
-                          padding: 8px;
-                        }
-                        tr:nth-child(even) {
-                          background-color: #f2f2f2; /* Colore di sfondo per le righe pari */
-                        }
-                        th {
-                          background-color: #4CAF50;
-                          color: white;
-                        }
-                    </code>
-                </pre>
-                <table class="table2">
-                    <thead class="table2">
-                        <tr class="table2">
-                            <th class="table2">Nome</th>
-                            <th class="table2">Età</th>
-                            <th class="table2">Città</th>
-                        </tr>
-                    </thead>
-                    <tbody class="table2">
-                        <tr class="table2">
-                            <td class="table2">Mario Rossi</td>
-                            <td class="table2">30</td>
-                            <td class="table2">Roma</td>
-                        </tr>
-                        <tr class="table2">
-                            <td class="table2">Luigi Bianchi</td>
-                            <td class="table2">25</td>
-                            <td class="table2">Milano</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-            <section>
-                <header><h3>Tabelle responsive</h3></header>
-                <p>Le tabelle possono diventare difficili da leggere su dispositivi mobili.</p>
-                <p><strong>Per rendere una tabella responsive, possiamo utilizzare CSS per farla scorrere orizzontalmente su schermi più piccoli.</strong></p>
-                <p>Vediamo un esempio di tabella responsive.</p>
-                <pre>
-                    <code>
-                        css:
+                https://www.esempio.com/guida-seo-principianti
+              </code>
+            </pre>
+          </section>        
+        </section>
+      </article>
+      <article>
+        <section>
+          <header><h2>Ottimizzazione off-page</h2></header>
+          <p><strong>L'ottimizzazione off-page riguarda le attività svolte al di fuori del sito web</strong> 
+          per migliorare la sua rilevanza.  
+          </p>
+          <section>
+            <header><h3>Link building</h3></header>
+              <p><strong>Il link building è una strategia che mira a ottenere link da altri siti web al tuo.</strong>
+              </p>Questi link, chiamati backlink, sono importanti perché i motori di ricerca come Google li vedono come "voti di fiducia". Più backlink di qualità ha il tuo sito, più alta sarà la sua visibilità e posizione nei risultati di ricerca.</p>
+              <p>Ecco alcune tecniche chiave per costruire link efficaci:</p>
+              <ul>  
+                <li><strong>Backlink di qualità</strong>: ottieni link da siti autorevoli e pertinenti.</li>
+                <li><strong>Guest blogging</strong>: scrivi articoli per altri siti web e includi link al tuo sito.</li>
+                <li><strong>Directory e Forum</strong>: partecipa a directory online e forum di discussione pertinenti.</li>
+              </ul>
+              <p>Vediamo un esempio.</p>
+          </section>
+          <section>
+            <header><h3>Tag fondamentali per la SEO</h3></header>
+            <p>Ci sono alcuni tag HTML che giocano un ruolo cruciale nella SEO:</p>
+            <ul>  
+              <li><strong>&lt;title&gt;</strong>:  dovrebbe contenere la parola chiave principale e descrivere chiaramente il contenuto della pagina.</li>
+              <li><strong>&lt;meta name="description"&gt;</strong>: la descrizione della pagina che appare nei risultati di ricerca.</li>
+              <li><strong>&lt;h1&gt - &lt;h6&gt;</strong>: intestazioni utilizzate per suddividere il contenuto in sezioni.</li>              
+              <li><strong>&lt;img alt=""&gt;</strong>: descrizione alternativa delle immagini.</li>              
+              <li><strong>&lt;link rel="canonical"&gt;</strong>: per evitare problemi di contenuti duplicati.</li>              
 
-                        table {
-                          width: 100%;
-                          border-collapse: collapse;
-                        }
-                        th, td {
-                          border: 1px solid #dddddd;
-                          text-align: left;
-                          padding: 8px;
-                        }
-                        tr:nth-child(even) {
-                          background-color: #f2f2f2;
-                        }
-                        th {
-                          background-color: #4CAF50;
-                          color: white;
-                        }
-                        @media screen and (max-width: 600px) {
-                          table {
-                            width: 100%;
-                            display: block;
-                            overflow-x: auto; /* Aggiunge uno scorrimento orizzontale */
-                          }
-                        }
-                    </code>
-                </pre>
-                <p>Le tabelle responsive sono utilizzate per organizzare informazioni con una larga quantità di colonne e righe.</p>
-                <div class="table1-container">
-                  <table class="table1">
-                      <thead class="table1">
-                        <tr class="table1">
-                          <th class="table1">Nome</th>
-                          <th class="table1">Età</th>
-                          <th class="table1">Città</th>
-                          <th class="table1">Indirizzo</th>
-                          <th class="table1">Provincia</th>
-                        </tr>
-                      </thead>
-                      <tbody class="table1">
-                        <tr class="table1">
-                          <td class="table1">Mario Rossi</td>
-                          <td class="table1">30</td>
-                          <td class="table1">Roma</td>
-                          <td class="table1">Via Roma, 1</td>
-                          <td class="table1">RM</td>
-                        </tr>
-                        <tr class="table1">
-                          <td class="table1">Luigi Bianchi</td>
-                          <td class="table1">25</td>
-                          <td class="table1">Milano</td>
-                          <td class="table1">Via Luigi, 2</td>
-                          <td class="table1">MI</td>
-                        </tr>
-                      </tbody>
-                    </table>                
-                </div>
-            </section>
-            <section>
-                <header><h3>Tabelle complesse</h3></header>
-                <p>Le tabelle possono contenere intestazioni di colonna e di riga, celle che attraversano più righe o colonne, e altro ancora.</p>
-                <p>Analizziamo un esempio di tabella con celle che attraversano più colonne e righe.</p>
-                <pre>
-                    <code>
-                        html :
-
-                        &lt;table&gt;
-                        &lt;thead&gt;
-                          &lt;tr&gt;
-                            &lt;th&gt;Nome&lt;/th&gt;
-                            &lt;th&gt;Età&lt;/th&gt;
-                            &lt;th&gt;Città&lt;/th&gt;
-                            &lt;th rowspan=&quot;2&quot;&gt;Note&lt;/th&gt; &lt;!-- Cell che attraversa due righe --&gt;
-                          &lt;/tr&gt;
-                          &lt;tr&gt;
-                            &lt;th colspan=&quot;2&quot;&gt;Informazioni Personali&lt;/th&gt; &lt;!-- Cell che attraversa due colonne --&gt;
-                            &lt;th&gt;Contatti&lt;/th&gt;
-                          &lt;/tr&gt;
-                        &lt;/thead&gt;
-                        &lt;tbody&gt;
-                          &lt;tr&gt;
-                            &lt;td&gt;Mario Rossi&lt;/td&gt;
-                            &lt;td&gt;30&lt;/td&gt;
-                            &lt;td&gt;Roma&lt;/td&gt;
-                            &lt;td rowspan=&quot;2&quot;&gt;Nessuna nota&lt;/td&gt; &lt;!-- Cell che attraversa due righe --&gt;
-                          &lt;/tr&gt;
-                          &lt;tr&gt;
-                            &lt;td&gt;Luigi Bianchi&lt;/td&gt;
-                            &lt;td&gt;25&lt;/td&gt;
-                            &lt;td&gt;Milano&lt;/td&gt;
-                          &lt;/tr&gt;
-                        &lt;/tbody&gt;
-                      &lt;/table&gt;                     
-                    </code>
-                </pre>
-                <p>Ecco un esempio di tabella con celle che attraversano più colonne e righe.</p>
-                <table class="table1">
-                    <thead class="table1">
-                      <tr class="table1">
-                        <th class="table1">Nome</th>
-                        <th class="table1">Età</th>
-                        <th class="table1">Città</th>
-                        <th class="table1" rowspan="2">Note</th> <!-- Cell che attraversa due righe -->
-                      </tr>
-                      <tr class="table1">
-                        <th colspan="2">Informazioni Personali</th> <!-- Cell che attraversa due colonne -->
-                        <th class="table1">Contatti</th>
-                      </tr>
-                    </thead>
-                    <tbody class="table1">
-                      <tr class="table1">
-                        <td class="table1">Mario Rossi</td>
-                        <td class="table1">30</td>
-                        <td class="table1">Roma</td>
-                        <td class="table1" rowspan="2">Nessuna nota</td> <!-- Cell che attraversa due righe -->
-                      </tr>
-                      <tr class="table1">
-                        <td class="table1">Luigi Bianchi</td>
-                        <td class="table1">25</td>
-                        <td class="table1">Milano</td>
-                      </tr>
-                    </tbody>
-                  </table>
-            </section>
-        </article>
+            </ul>
+          </section>
+          <section>
+            <header><h3>Esempio di implementazione</h3></header>
+            <p>Vediamo un esempio di implementazione in ottica SEO.</p>
+            <pre>
+              <code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang=&quot;it&quot;&gt;
+                &lt;head&gt;
+                  &lt;meta charset=&quot;UTF-8&quot;&gt;
+                  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+                  &lt;title&gt;Guida Completa alla SEO per Principianti&lt;/title&gt;
+                  &lt;meta name=&quot;description&quot; content=&quot;Scopri come ottimizzare il tuo sito web per i motori di ricerca con la nostra guida completa alla SEO per principianti.&quot;&gt;
+                  &lt;link rel=&quot;canonical&quot; href=&quot;https://www.esempio.com/guida-seo-principianti&quot;&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                  &lt;h1&gt;Guida Completa alla SEO per Principianti&lt;/h1&gt;
+                  &lt;p&gt;La SEO, o ottimizzazione per i motori di ricerca, è il processo di miglioramento della visibilità di un sito web...&lt;/p&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;                
+              </code>
+            </pre>
+            <a href="https://it.semrush.com/blog/title-tag-guida-seo-passo-passo/" target="_blank"><p>In questo articolo trovi tantissime info utili che ti aiuteranno a comprendere come ottimizzare la SEO attraverso i title tag strategici.</p></a>
+          </section>          
+        </section>
+      </article>      
     </main>
     <footer>
         <p>&copy; 2024 Lezioni di Web Development</p>
