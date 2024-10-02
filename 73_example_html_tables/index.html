@@ -29,7 +29,7 @@
             <img src='asset/img/header-image.png'
             srcset='asset/img/header-image.png 1x,
             asset/img/header-image.png 2x'
-            style='max-width: 500px'/>
+            style='width: 100%;height: auto;'/>
         </div>
     </header>
     <main>
@@ -192,7 +192,6 @@
                     </code>
                 </pre>
                 <p>Le tabelle responsive sono utilizzate per organizzare informazioni con una larga quantità di colonne e righe.</p>
-                <div class="table1-container">
                   <table class="table1">
                       <thead class="table1">
                         <tr class="table1">
@@ -220,7 +219,6 @@
                         </tr>
                       </tbody>
                     </table>                
-                </div>
             </section>
             <section>
                 <header><h3>Tabelle complesse</h3></header>
@@ -260,33 +258,87 @@
                     </code>
                 </pre>
                 <p>Ecco un esempio di tabella con celle che attraversano più colonne e righe.</p>
-                <table class="table1">
-                    <thead class="table1">
-                      <tr class="table1">
-                        <th class="table1">Nome</th>
-                        <th class="table1">Età</th>
-                        <th class="table1">Città</th>
-                        <th class="table1" rowspan="2">Note</th> <!-- Cell che attraversa due righe -->
+                <table class="table2">
+                    <thead class="table2">
+                      <tr class="table2">
+                        <th class="table2">Nome</th>
+                        <th class="table2">Età</th>
+                        <th class="table2">Città</th>
+                        <th class="table2" rowspan="2">Note</th> <!-- Cell che attraversa due righe -->
                       </tr>
-                      <tr class="table1">
-                        <th colspan="2">Informazioni Personali</th> <!-- Cell che attraversa due colonne -->
-                        <th class="table1">Contatti</th>
+                      <tr class="table2">
+                        <th class="table2" colspan="2">Informazioni Personali</th> <!-- Cell che attraversa due colonne -->
+                        <th class="table2">Contatti</th>
                       </tr>
                     </thead>
-                    <tbody class="table1">
-                      <tr class="table1">
-                        <td class="table1">Mario Rossi</td>
-                        <td class="table1">30</td>
-                        <td class="table1">Roma</td>
-                        <td class="table1" rowspan="2">Nessuna nota</td> <!-- Cell che attraversa due righe -->
+                    <tbody class="table2">
+                      <tr class="table2">
+                        <td class="table2">Mario Rossi</td>
+                        <td class="table2">30</td>
+                        <td class="table2">Roma</td>
+                        <td class="table2" rowspan="2">Nessuna nota</td> <!-- Cell che attraversa due righe -->
                       </tr>
-                      <tr class="table1">
-                        <td class="table1">Luigi Bianchi</td>
-                        <td class="table1">25</td>
-                        <td class="table1">Milano</td>
+                      <tr class="table2">
+                        <td class="table2">Luigi Bianchi</td>
+                        <td class="table2">25</td>
+                        <td class="table2">Milano</td>
                       </tr>
                     </tbody>
                   </table>
+            </section>
+            <section>
+              <header><h3>Test Paolo</h3></header>
+              <table class="table3">
+                <thead class="table3">
+                  <tr class="table3">
+                    <th class="table3" rowspan="2">Monday</th>
+                    <th class="table3" rowspan="2">Tuesday</th>
+                    <th class="table3" rowspan="2">Wednesday</th>
+                    <th class="table3" rowspan="2">Thursday</th>
+                    <th class="table3" rowspan="2">Friday</th>
+                    <th class="table3" rowspan="2">Saturday</th>
+                    <th class="table3" rowspan="2">Sunday</th>
+                  </tr>
+                </thead>
+                <tbody class="table3">
+                  <tr class="table3">
+                    <td class="table3" style="background-color: rgba(0, 162, 255, 0.863);" >Public Swin<br>06.30-10.30</td>
+                    <td class="table3" style="background-color: rgba(0, 162, 255, 0.863);">Public Swin<br>06.30-09.00</td>
+                    <td class="table3" style="background-color: rgba(0, 162, 255, 0.863);">Public Swin<br>06.30-09.00</td>
+                    <td class="table3" style="background-color: rgba(0, 162, 255, 0.863);" >Public Swin<br>06.30-11.15</td>
+                    <td class="table3" style="background-color: rgba(0, 162, 255, 0.863);" >Public Swin<br>06.30-09.00</td>
+                    <td class="table3" style="background-color: rgb(111, 168, 19);">Lane Swin<br>08.00-09.00</td>
+                    <td class="table3" style="background-color: rgb(111, 168, 19);">Lane Swin<br>08.00-09.00</td>
+                  </tr>
+                  <tr class="table3">
+                    <td class="table3" ></td>
+                    <td class="table3" ></td>
+                    <td class="table3" ></td>
+                    <td class="table3" ></td>
+                    <td class="table3" ></td>
+                    <td class="table3" ></td>
+                    <td class="table3" ></td>
+                  </tr>
+                  <tr class="table3">
+                    <td class="table3" style="background-color: rgb(111, 168, 19);">Lane Swin<br>11.30-13.00</td>
+                    <td class="table3" style="background-color: rgb(168, 19, 81);">Parent & Baby<br>09.15-10.00</td>
+                    <td class="table3" style="background-color: rgb(111, 168, 19);">Lane Swin<br>12.00-13.00</td>
+                    <td class="table3" style="background-color: rgb(111, 168, 19);">Lane Swin<br>12.00-13.00</td>
+                    <td class="table3" style="background-color: rgb(111, 168, 19);">Lane Swin<br>12.00-13.00</td>
+                    <td class="table3" style="background-color: rgb(168, 19, 81);">Parent & Baby<br>12.00-10.00</td>
+                    <td class="table3" style="background-color: rgb(168, 19, 81);">Acquacise<br>11.00-11.45</td>
+                  </tr>
+                  <tr class="table3">
+                    <td class="table3" ></td>
+                    <td class="table3" ></td>
+                    <td class="table3" ></td>
+                    <td class="table3" ></td>
+                    <td class="table3" ></td>
+                    <td class="table3" ></td>
+                    <td class="table3" ></td>
+                  </tr>
+                </tbody>
+              </table>
             </section>
         </article>
     </main>

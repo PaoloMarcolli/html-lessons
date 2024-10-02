@@ -16,45 +16,71 @@ mark {
   }
 
  /* classe per tabelle con CSS */
-.table2 table {
+table.table2{
     width: 100%;
     border-collapse: collapse; /* Elimina lo spazio tra i bordi delle celle */
   }
   
-.table2  th, td {
+th,td.table2{
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
   }
-.table2  tr:nth-child(even) {
+tr.table2:nth-child(even) {
     background-color: #f2f2f2; /* Colore di sfondo per le righe pari */
   }
-.table2  th {
+th.table2{
     background-color: #4CAF50;
     color: white;
   }
-
   
 
-.table1 table {
+table.table1{
   width: 100%;
   border-collapse: collapse;
 }
 
-.table1 th, td {
+th,td.table1{
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
 }
-.table1 tr:nth-child(even) {
+tr:nth-child(even).table1{
   background-color: #f2f2f2;
 }
-.table1 th {
+th.table1{
   background-color: #4c8baf;
   color: white;
 }
 @media screen and (max-width: 600px)  {
-    table {
+  table.table1 {
+    width: 100%;
+    display: block;
+    overflow-x: auto; /* Aggiunge uno scorrimento orizzontale */
+  }
+}
+
+table.table3{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,td.table3{
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+td.table3{
+  color: white;
+}
+tr:nth-child(even).table3{
+  background-color: #f2f2f2;
+}
+th.table3{
+  background-color: #9da1a3;
+}
+@media screen and (max-width: 600px)  {
+  table.table3 {
     width: 100%;
     display: block;
     overflow-x: auto; /* Aggiunge uno scorrimento orizzontale */
