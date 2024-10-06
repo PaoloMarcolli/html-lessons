@@ -14,88 +14,105 @@
     <link rel="icon" href="../img/favicon-32x32.png" sizes="32x32" type="image/png">
 </head>
 <body>
-    <h1>Esempio di Flexbox</h1>
-    <p>Come si usa il Flexible box layout</p>
-    <p>impostare display:flex</p>
-    <h2>Flex-direction impostata a  </h2>
-    <p>=> row:<strong>default</strong> (si allineano in orizzonatale a sinistra)</p>
-    <div class="container-flex-row">
-        <div class="item">Box 1</div>
-        <div class="item">Box 2</div>
-        <div class="item">Box 3</div>
-    </div>
-    <h2>Flex-direction impostata a  </h2>
-    <p>=> row-reverse (si allineano in orizzonatale a destra dall'ultimo al primo)</p>
-    <div class="container-flex-row-reverse">
-        <div class="item">Box 1</div>
-        <div class="item">Box 2</div>
-        <div class="item">Box 3</div>
-    </div>   
-    <h2>Flex-direction impostata a  </h2>
-    <p>=> column (si allineano in verticale dall'alto)</p>
-    <div class="container-flex-column">
-        <div class="item">Box 1</div>
-        <div class="item">Box 2</div>
-        <div class="item">Box 3</div>
-    </div>   
-    <h2>Flex-direction impostata a  </h2>
-    <p>=> column-reverse (si allineano in verticale dal basso)</p>
-    <div class="container-flex-column-reverse">
-        <div class="item">Box 1</div>
-        <div class="item">Box 2</div>
-        <div class="item">Box 3</div>
-    </div>   
-    <h2>Justify-content impostata a  </h2>
-    <p>=> center ( per allinearli all'asse orizzontale)</p>
-    <div class="container-flex-row-center">
-        <div class="item">Box 1</div>
-        <div class="item">Box 2</div>
-        <div class="item">Box 3</div>
-    </div>
-    <p>=> start ( per allinearli all'asse orizzontale all'inizio)</p>
-    <div class="container-flex-row-start">
-        <div class="item">Box 1</div>
-        <div class="item">Box 2</div>
-        <div class="item">Box 3</div>
-    </div>
-    <p>=> end ( per allinearli all'asse orizzontale alla fine)</p>
-    <div class="container-flex-row-end">
-        <div class="item">Box 1</div>
-        <div class="item">Box 2</div>
-        <div class="item">Box 3</div>
-    </div>
-    <p>=> space-between ( per allinearli all'asse orizzontale distribuendoli lungo tutto lo spazio a disposizione )</p>
-    <div class="container-flex-row-space-between">
-        <div class="item">Box 1</div>
-        <div class="item">Box 2</div>
-        <div class="item">Box 3</div>
-    </div>
-    <p>=> space-around ( per allinearli all'asse orizzontale da attorno a tutti gli elementi lo stesso spazio attorno)</p>
-    <div class="container-flex-row-space-around">
-        <div class="item">Box 1</div>
-        <div class="item">Box 2</div>
-        <div class="item">Box 3</div>
-    </div>
-    <h2>Align-items impostata a  </h2>
-    <p>=> stretch:<strong>default</strong> ( in questo caso prende il default che è stretch che riempe tutto il container )</p>
-    <div class="container-flex-row-space-around-with-height">
-        <div class="item">Box 1</div>
-        <div class="item">Box 2</div>
-        <div class="item">Box 3</div>
-    </div>
-    <p>=> end ( in questo caso gli vegono allineati al fondo del contenitore del contenitore )</p>
-    <div class="container-flex-row-space-around-with-height-end">
-        <div class="item">Box 1</div>
-        <div class="item">Box 2</div>
-        <div class="item">Box 3</div>
-    </div>
-    <p>=> oltre end, come per justify-content vi sono start,space-around,space-between,ecc..</p>
-    <p>=> molto interessante è <strong>flex-grow</strong> </p>
-    <div class="container-flex-row-space-around-with-height-end">
-        <div class="item big">Box 1</div>
-        <div class="item">Box 2</div>
-        <div class="item">Box 3</div>
-    </div>
-   
+    <header class="responsive-navbar">
+        <img src="asset/img/logo-with-brand-small.png" alt="Depyl" class="logo">
+        <input class="menu-btn" id="menu-btn" type="checkbox"/>
+        <label for="menu-btn" class="menu-icon">
+            <span class="nav-icon"></span>
+        </label>  
+        <ul class="menu">
+            <li><a href="#where-is-born">Da dove nasce l'idea</a></li>
+            <li><a href="#vision">Vision</a></li>
+            <li><a href="#mission">Mission</a></li>
+            <li><a href="#who-are">Chi siamo</a></li>
+            <li><a href="#how-do">Come funziona?</a></li>
+        </ul>
+    </header>
+    <main>
+        <article>   
+            <h1>Esempio di Flexbox</h1>
+            <p>Come si usa il Flexible box layout</p>
+            <p>impostare display:flex</p>
+            <h2>Flex-direction impostata a  </h2>
+            <p>=> row:<strong>default</strong> (si allineano in orizzonatale a sinistra)</p>
+            <div class="container-flex-row">
+                <div class="item">Box 1</div>
+                <div class="item">Box 2</div>
+                <div class="item">Box 3</div>
+            </div>
+            <h2>Flex-direction impostata a  </h2>
+            <p>=> row-reverse (si allineano in orizzonatale a destra dall'ultimo al primo)</p>
+            <div class="container-flex-row-reverse">
+                <div class="item">Box 1</div>
+                <div class="item">Box 2</div>
+                <div class="item">Box 3</div>
+            </div>   
+            <h2>Flex-direction impostata a  </h2>
+            <p>=> column (si allineano in verticale dall'alto)</p>
+            <div class="container-flex-column">
+                <div class="item">Box 1</div>
+                <div class="item">Box 2</div>
+                <div class="item">Box 3</div>
+            </div>   
+            <h2>Flex-direction impostata a  </h2>
+            <p>=> column-reverse (si allineano in verticale dal basso)</p>
+            <div class="container-flex-column-reverse">
+                <div class="item">Box 1</div>
+                <div class="item">Box 2</div>
+                <div class="item">Box 3</div>
+            </div>   
+            <h2>Justify-content impostata a  </h2>
+            <p>=> center ( per allinearli all'asse orizzontale)</p>
+            <div class="container-flex-row-center">
+                <div class="item">Box 1</div>
+                <div class="item">Box 2</div>
+                <div class="item">Box 3</div>
+            </div>
+            <p>=> start ( per allinearli all'asse orizzontale all'inizio)</p>
+            <div class="container-flex-row-start">
+                <div class="item">Box 1</div>
+                <div class="item">Box 2</div>
+                <div class="item">Box 3</div>
+            </div>
+            <p>=> end ( per allinearli all'asse orizzontale alla fine)</p>
+            <div class="container-flex-row-end">
+                <div class="item">Box 1</div>
+                <div class="item">Box 2</div>
+                <div class="item">Box 3</div>
+            </div>
+            <p>=> space-between ( per allinearli all'asse orizzontale distribuendoli lungo tutto lo spazio a disposizione )</p>
+            <div class="container-flex-row-space-between">
+                <div class="item">Box 1</div>
+                <div class="item">Box 2</div>
+                <div class="item">Box 3</div>
+            </div>
+            <p>=> space-around ( per allinearli all'asse orizzontale da attorno a tutti gli elementi lo stesso spazio attorno)</p>
+            <div class="container-flex-row-space-around">
+                <div class="item">Box 1</div>
+                <div class="item">Box 2</div>
+                <div class="item">Box 3</div>
+            </div>
+            <h2>Align-items impostata a  </h2>
+            <p>=> stretch:<strong>default</strong> ( in questo caso prende il default che è stretch che riempe tutto il container )</p>
+            <div class="container-flex-row-space-around-with-height">
+                <div class="item">Box 1</div>
+                <div class="item">Box 2</div>
+                <div class="item">Box 3</div>
+            </div>
+            <p>=> end ( in questo caso gli vegono allineati al fondo del contenitore del contenitore )</p>
+            <div class="container-flex-row-space-around-with-height-end">
+                <div class="item">Box 1</div>
+                <div class="item">Box 2</div>
+                <div class="item">Box 3</div>
+            </div>
+            <p>=> oltre end, come per justify-content vi sono start,space-around,space-between,ecc..</p>
+            <p>=> molto interessante è <strong>flex-grow</strong> </p>
+            <div class="container-flex-row-space-around-with-height-end">
+                <div class="item big">Box 1</div>
+                <div class="item">Box 2</div>
+                <div class="item">Box 3</div>
+            </div>
+        </article>
+    </main>
 </body>
 </html>
