@@ -1,0 +1,44 @@
+.explosion-container {
+    font-family: 'Arial', sans-serif;
+    font-size: 4rem;
+    color: black;
+  }
+ 
+.explode {
+    display: inline-block;
+    animation: explode 6s ease-in-out forwards;
+  }
+  
+  /* Creazione dell'animazione di esplosione */
+  @keyframes explode {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+      letter-spacing: 0;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 0.8;
+      letter-spacing: 0.2rem;
+    }
+    100% {
+      transform: scale(3);
+      opacity: 0;
+      letter-spacing: 2rem;
+    }
+  }
+ 
+ @keyframes explode {
+    0% {
+        transform: scale(1) translate(0, 0);
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.5) translate(calc(200px * (random() - 0.5)), calc(200px * (random() - 0.5)));
+        opacity: 0;
+    }
+ }
+ 
