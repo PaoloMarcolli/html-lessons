@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" >
-    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/main.css">
     <link rel="icon" href="asset/img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="asset/img/favicon-16x16.png" sizes="16x16" type="image/png">
     <link rel="icon" href="asset/img/favicon-32x32.png" sizes="32x32" type="image/png">
@@ -15,7 +15,7 @@
 <body>
     <header>
     </header>
-        <h1>Tutorial OpenGraph </h1>
+        <h1>Tutorial Sass </h1>
         <div class="illustration">
             <img src='asset/img/header-image.png'
             srcset='asset/img/header-image.png 1x,
@@ -26,93 +26,116 @@
     <main>
         <article>
             <section>
-                <p><strong>I tag OpenGraph sono un insieme di meta tag HTML utilizzati per migliorare la condivisione di contenuti web sui social media.</strong></p>
-                <p>Inizialmente sviluppati da Facebook, questi tag sono ora supportati da molte altre piattaforme social come LinkedIn, X e Pinterest.</p>
-                <p><strong>Utilizzando i tag OpenGraph, puoi controllare come il tuo contenuto appare quando viene condiviso, migliorando la visibilità e l'engagement del tuo sito.</strong></p>
-                <p>OpenGraph è un protocollo che consente a una pagina web di diventare un ricco oggetto nei social media.</p>
-                <p>Utilizzando i tag OpenGraph, puoi specificare:</p>
+                <p><strong>Sass (Syntactically Awesome Style Sheets) è uno dei preprocessori CSS più popolari.</strong> Offre numerose funzionalità avanzate che migliorano la scrittura del CSS.</p>
+                <p><a href="https://sass-lang.com/" target="_blank">Trovi Less a questo link.</a></p>
+                <p></p>
+                <p>Le sue caratteristiche principali includono:</p>
                 <ul>  
-                    <li>Il titolo del contenuto.</li>
-                    <li>Una breve descrizione.</li>
-                    <li>Un'immagine rappresentativa.</li>
-                    <li>Il tipo di contenuto (articolo, video, prodotto, ecc.).</li>
+                    <Il><strong>Variabili</strong>: consentono di memorizzare valori CSS che possono essere riutilizzati. Vediamo un esempio.
+                        <pre style="background-color: black">
+                            <code style="color: white;">
+scss
+
+$primary-color: #3498db;
+    body {
+        color: $primary-color;
+    }
+                            </code>
+                        </pre>        
+                        <p>Vedi risultato </p>
+                        <div class="sass-sample-1">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quod recusandae deserunt itaque in nihil quaerat voluptatibus blanditiis quisquam quos? Minus animi ea magni explicabo iusto aspernatur numquam mollitia tenetur!</p>
+                        </div>
+                    </li>
+                    <li><strong>Annidamento</strong>: permette di scrivere selettori CSS in modo gerarchico. Vediamo un esempio.
+                        <pre style="background-color: black">
+                            <code style="color: white;">
+scss
+
+nav {
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li {
+            display: inline-block;
+            a {
+                text-decoration: none;
+                color: $primary-color;
+            }
+            }
+        }
+   }
+                            </code>
+                        </pre>        
+                    </li>
+                    <nav>   
+                        <ul>
+                            <li><a href="#">Home 1</a></li>
+                            <li><a href="#">Home 2</a></li>
+                            <li><a href="#">Home 2</a></li>
+                        </ul>
+                    </nav>
+                    <li><strong>Mixin</strong>: blocchi di codice riutilizzabili. Vediamo un esempio.
+                        <pre style="background-color: black">
+                            <code style="color: white;">
+scss
+
+    @mixin border-radius($radius) {
+        -webkit-border-radius: $radius;
+        -moz-border-radius: $radius;
+        border-radius: $radius;
+    }
+    .box { 
+        @include border-radius(10px); 
+    }
+                            </code>
+                        </pre> 
+                        <div class="box">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, qui exercitationem minima recusandae consectetur tempore? Similique eveniet ullam maiores ab blanditiis consectetur, cum deleniti ex nostrum recusandae alias odio ipsum!</p>
+                        </p>
+                    </li>
+                    <li><strong>Ereditarietà</strong>: consente di estendere le proprietà di un selettore ad altri selettori. Vediamo un esempio.
+                        <pre style="background-color: black">
+                            <code style="color: white;">
+scss
+
+    .message {
+        border: 1px solid #ccc;
+        padding: 10px;
+        color: #333;
+    }
+    .success {
+        @extend .message;
+        border-color: green;
+    }
+                            </code>
+                        </pre> 
+                        <div class="success">
+                            <p>Vedi risultato </p>           
+                        </div>
+                    </li>
+                    <li><strong>Funzioni</strong>: Sass include funzioni predefinite per manipolare colori, numeri, stringhe e altro. Vediamo un esempio.
+                        <pre style="background-color: black">
+                            <code style="color: white;">
+scss
+
+    $color: #3498db;
+    .lighten {
+        color: lighten($color, 20%);
+    }
+                            </code>
+                        </pre>     
+                        <div class="lighten">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sit obcaecati praesentium distinctio aliquam, dolor repellat pariatur, nesciunt natus consequuntur odio fugiat a magni saepe veritatis ab rem in similique.</p>
+                        </div>    
+                        <p>Trovi di seguito un ottimo tutorial che spiega come approcciarsi a SASS.</p>
+                        <iframe width="844" height="475" src="https://www.youtube.com/embed/_a5j7KoflTs" title="Sass Tutorial for Beginners - CSS With Superpowers" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                
+                        <a href="https://sass-lang.com/guide/" target="_blank">Il sito ufficiale presenta questa guida per introdurre l'argomento, che puoi leggere come approfondimento opzionale.</a>        
+                    </li>
                 </ul>
-                <p><strong>Questi tag sono inclusi nell'head del documento HTML e utilizzano il prefisso og:</strong> per indicare che fanno parte del protocollo OpenGraph.</p>
-                <p>I tag OpenGraph giocano un ruolo importante per vari motivi:</p>
-                <ul>
-                    <li><strong>Controllo della presentazione</strong>: puoi controllare esattamente come il tuo contenuto appare quando viene condiviso sui social media, assicurandoti che l'immagine, il titolo e la descrizione siano attraenti e rilevanti.</li>
-                    <li><strong>Aumento dell'engagement</strong> contenuti ben formattati tendono a ottenere più clic, condivisioni e interazioni sui social media.</li>    
-                    <li><strong>Migliore riconoscimento del brand</strong>: utilizzare un'immagine coerente e un titolo chiaro aiuta a migliorare il riconoscimento del marchio.</li>    
-                    <li><strong> Posizionamento del sito</strong>: anche se non influiscono direttamente sulla SEO tradizionale, i tag OpenGraph possono migliorare la visibilità del tuo contenuto sui social media, che a sua volta può aumentare il traffico verso il tuo sito.</li>    
-                </ul>    
-            </section>
-            <section>
-                <header><h2>Implementazione dei tag OpenGraph</h2></header>
-                <p>Ecco i tag OpenGraph fondamentali che dovresti includere nella tua pagina web:</p>
-                <ul>
-                   <li><mark>&lt;og:title&gt;</mark>: il titolo del contenuto. Vediamo un esempio.</li>         
-                   <pre style="background-color: black">
-                      <code style="color: white;">
-  html:
-    &lt;meta property="og:title" content="Il titolo del tuo contenuto" /&gt
-                      </code>
-                   </pre>  
-                   <li><mark>&lt;og:description&gt;</mark>: una breve descrizione del contenuto. Vediamo un esempio.</li>         
-                   <pre style="background-color: black">
-                    <code style="color: white;">
-  html:
-    &lt;meta property="og:description" content="Una breve descrizione del contenuto" /&gt
-                    </code>
-                 </pre>  
-                   <li><mark>&lt;og:image&gt;</mark>: l'URL di un'immagine rappresentativa del contenuto. Vediamo un esempio.</li>         
-                   <pre style="background-color: black">
-                    <code style="color: white;">
-  html:
-    &lt;meta property="og:image" content="https://esempio.com/immagine.jpg" /&gt
-                    </code>
-                 </pre>  
-                   <li><mark>&lt;og:url&gt;</mark>: l'URL canonico del contenuto. Vediamo un esempio.</li>         
-                   <pre style="background-color: black">
-                    <code style="color: white;">
-  html:
-    &lt;meta property="og:url" content="https://esempio.com/pagina" /&gt
-                    </code>
-                 </pre>  
-                   <li><mark>&lt;og:type&gt;</mark>: il tipo di contenuto. Può essere article, video, website, ecc. Vediamo un esempio.</li>         
-                   <pre style="background-color: black">
-                    <code style="color: white;">
-  html:
-    &lt;meta property="og:type" content="website" /&gt
-                    </code>
-                 </pre>  
-                </ul>
-            </section>
-            <section>
-                <header><h2>Esempio di pagina web con tag OpenGraph</h2></header>
-                <p>Ecco un esempio completo di come utilizzare i tag OpenGraph in una pagina HTML.</p>
-                <pre>
-                    <code>  
-  &lt;!DOCTYPE html&gt;
-  &lt;html lang=&quot;it&quot;&gt;
-  &lt;head&gt;
-      &lt;meta charset=&quot;UTF-8&quot;&gt;
-      &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-      &lt;title&gt;Lezione sui Tag OpenGraph&lt;/title&gt;
-      &lt;meta property=&quot;og:title&quot; content=&quot;Lezione sui Tag OpenGraph&quot; /&gt;
-      &lt;meta property=&quot;og:description&quot; content=&quot;Scopri come utilizzare i tag OpenGraph per migliorare la condivisione dei tuoi contenuti sui social media.&quot; /&gt;
-      &lt;meta property=&quot;og:image&quot; content=&quot;https://esempio.com/opengraph-lezione.jpg&quot; /&gt;
-      &lt;meta property=&quot;og:url&quot; content=&quot;https://esempio.com/lezione-opengraph&quot; /&gt;
-      &lt;meta property=&quot;og:type&quot; content=&quot;article&quot; /&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-      &lt;h1&gt;Lezione sui Tag OpenGraph&lt;/h1&gt;
-      &lt;p&gt;Scopri come utilizzare i tag OpenGraph per migliorare la condivisione dei tuoi contenuti sui social media.&lt;/p&gt;
-  &lt;/body&gt;
-  &lt;/html&gt;
-                    </code>
-                </pre>
-            </section>
-        </article>
+        </section>
+ </article>
     </main>
     <footer>
         <p>&copy; 2024 Lezioni di Web Development</p>

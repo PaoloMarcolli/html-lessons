@@ -1,0 +1,96 @@
+/*$primary-color: #272727;
+$accent-color: #ff652f;
+$text-color: #fff;
+$font-weights: (
+    "regular":400,
+    "medium" :500,
+    "bold":700
+);
+
+body {    
+    background-color: var($primary-color);
+    font-weight: map-get($font-weights, bold);
+  }
+*/
+/* semantic block */
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 15px;
+    font-weight: 400!important;
+    line-height: 1.5;
+    padding: 0;
+}
+
+code{
+  background-color: #00000096;
+  color: #FFFFFF;
+  text-align: left;
+}
+
+pre{
+  background-color: #000000;
+}
+
+/* element block */
+mark {
+    background-color: rgb(230, 242, 247);
+    color: black;
+  }
+
+/* Variabili: consentono di memorizzare valori CSS che possono essere riutilizzati. Vediamo un esempio. */
+$primary-color: #3498db;
+$success-color-background: #2ecc71;
+$success-color-foreground: #fff;
+.sass-sample-1 {
+      color: $primary-color;
+  }
+
+/* Annidamento: permette di scrivere selettori CSS in modo gerarchico. Vediamo un esempio */
+nav {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+        display: inline-block;
+        a {
+            text-decoration: none;
+            color: $primary-color;
+        }
+        }
+    }
+}
+
+/* Mixin: blocchi di codice riutilizzabili. Vediamo un esempio. */
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+    background-color: $primary-color
+}
+.box { 
+    @include border-radius(10px); 
+}
+ 
+/* Ereditarietà: consente di estendere le proprietà di un selettore ad altri selettori. Vediamo un esempio. */
+@mixin border-radius-succcess($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+    background-color: $success-color-background;
+    color: $success-color-foreground;
+}
+.message {
+    border: 1px solid #ccc;
+    @include border-radius-succcess(10px); 
+    padding: 10px;
+}
+.success {
+    @extend .message;
+    border-color: green;
+}
+
+$color: #3498db;
+.lighten {
+    color: lighten($color, 20%);
+}

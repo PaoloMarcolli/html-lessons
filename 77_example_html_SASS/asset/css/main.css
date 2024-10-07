@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/*$primary-color: #272727;
+$accent-color: #ff652f;
+$text-color: #fff;
+$font-weights: (
+    "regular":400,
+    "medium" :500,
+    "bold":700
+);
+
+body {    
+    background-color: var($primary-color);
+    font-weight: map-get($font-weights, bold);
+  }
+*/
+/* semantic block */
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 15px;
+  font-weight: 400 !important;
+  line-height: 1.5;
+  padding: 0;
+}
+
+code {
+  background-color: rgba(0, 0, 0, 0.5882352941);
+  color: #FFFFFF;
+  text-align: left;
+}
+
+pre {
+  background-color: #000000;
+}
+
+/* element block */
+mark {
+  background-color: rgb(230, 242, 247);
+  color: black;
+}
+
+/* Variabili: consentono di memorizzare valori CSS che possono essere riutilizzati. Vediamo un esempio. */
+.sass-sample-1 {
+  color: #3498db;
+}
+
+/* Annidamento: permette di scrivere selettori CSS in modo gerarchico. Vediamo un esempio */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #3498db;
+}
+
+/* Mixin: blocchi di codice riutilizzabili. Vediamo un esempio. */
+.box {
+  border-radius: 10px;
+  background-color: #3498db;
+}
+
+/* Ereditarietà: consente di estendere le proprietà di un selettore ad altri selettori. Vediamo un esempio. */
+.message, .success {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 10px;
+}
+
+.success {
+  border-color: green;
+}
+
+.lighten {
+  color: #8bc4ea;
+}/*# sourceMappingURL=main.css.map */
