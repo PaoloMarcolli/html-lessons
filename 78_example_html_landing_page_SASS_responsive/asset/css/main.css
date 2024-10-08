@@ -1,0 +1,266 @@
+@charset "UTF-8";
+/*
+    partial file use _<filename>.scss;
+    no extension
+    i file con _ davanti non vengono prepocessati ma considerati parte del file main da precompilare
+    praticamente sono blocchi di codice per consentire una migliere lettura del file 
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* SASS video lesson 5 functions. */
+/*$primary-color: #272727;
+$accent-color: #ff652f;
+$text-color: #fff;
+$font-weights: (
+    "regular":400,
+    "medium" :500,
+    "bold":700
+);
+
+body {    
+    background-color: var($primary-color);
+    font-weight: map-get($font-weights, bold);
+  }
+*/
+/* semantic block */
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 15px;
+  font-weight: 400 !important;
+  line-height: 1.5;
+  padding: 0;
+}
+
+code {
+  background-color: rgba(0, 0, 0, 0.5882352941);
+  color: #FFFFFF;
+  text-align: left;
+}
+
+pre {
+  background-color: #000000;
+}
+
+/* element block */
+mark {
+  background-color: rgb(230, 242, 247);
+  color: black;
+}
+
+/* Variabili: consentono di memorizzare valori CSS che possono essere riutilizzati. Vediamo un esempio. */
+.sass-sample-1 {
+  color: #3498db;
+}
+
+/* Annidamento: permette di scrivere selettori CSS in modo gerarchico. Vediamo un esempio */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #3498db;
+}
+
+/* Mixin: blocchi di codice riutilizzabili. Vediamo un esempio. */
+.box {
+  border-radius: 10px;
+  background-color: #3498db;
+}
+
+/* Ereditarietà: consente di estendere le proprietà di un selettore ad altri selettori. Vediamo un esempio. */
+.message, .success {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 10px;
+}
+
+.success {
+  border-color: green;
+}
+
+.lighten {
+  color: #8bc4ea;
+}
+
+/* SASS video lesson. */
+.fl-box-conainer-video {
+  background-color: #7d9ecf;
+}
+
+.box-video {
+  height: 30px;
+  background-color: #c7d6eb;
+}
+
+/* SASS video lesson 2 map sample. */
+.box-video-2sample {
+  background-color: #000000;
+  color: #FFF;
+  padding: 2%;
+}
+
+.regular-video-2sample {
+  font-weight: 400;
+}
+
+.medium-video-2sample {
+  font-weight: 500;
+}
+
+.bold-video-2sample {
+  font-weight: 700;
+}
+
+/* SASS video lesson 3 nesting sample. */
+.box-video-3sample {
+  background-color: #000000;
+  padding: 2%;
+}
+.box-video-3sample .box-video-3sample-title {
+  background-color: #000;
+  color: #ff652f;
+}
+.box-video-3sample .box-video-3sample-text {
+  background-color: #000;
+  color: #FFF;
+  font-weight: 700;
+}
+.box-video-3sample .box-video-3sample_paragraph3 {
+  background-color: #000;
+  color: #FFF;
+  font-weight: 800;
+}
+.box-video-3sample .box-video-3sample_paragraph3:hover {
+  font-weight: 400;
+  color: pink;
+}
+
+/* SASS video lesson 4 funcion sample. */
+.box-video-4sample {
+  background-color: #000000;
+  padding: 2%;
+}
+.box-video-4sample .box-video-4sample-title {
+  background-color: #000;
+  color: #ff652f;
+}
+.box-video-4sample .box-video-4sample-text {
+  font-weight: 200;
+  color: #FFF;
+}
+.box-video-4sample .box-video-4sample-text:hover {
+  font-weight: 400;
+}
+
+/* SASS video lesson 5 mixin sample. */
+.box-video-5sample {
+  background-color: #000000;
+  padding: 2%;
+}
+.box-video-5sample .box-video-5sample-flex-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.box-video-5sample .box-video-5sample-title {
+  background-color: #000;
+  color: #ff652f;
+}
+.box-video-5sample .box-video-5sample-text1, .box-video-5sample .box-video-5sample-text2 {
+  font-weight: 200;
+  color: #FFF;
+}
+.box-video-5sample .box-video-5sample-text1:hover, .box-video-5sample .box-video-5sample-text2:hover {
+  font-weight: 400;
+}
+.box-video-5sample .box-video-5sample-light {
+  background-color: white;
+  color: black;
+}
+
+/* SASS video lesson 5 mixin sample with media query. */
+.box-video-6sample {
+  background-color: #000000;
+  padding: 2%;
+}
+.box-video-6sample .box-video-6sample-flex-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+@media (max-width: 800px) {
+  .box-video-6sample .box-video-6sample-flex-content {
+    flex-direction: column;
+  }
+}
+.box-video-6sample .box-video-6sample-title {
+  background-color: #000;
+  color: #ff652f;
+}
+.box-video-6sample .box-video-6sample-text1, .box-video-6sample .box-video-6sample-text2 {
+  font-weight: 200;
+  color: #FFF;
+}
+.box-video-6sample .box-video-6sample-text1:hover, .box-video-6sample .box-video-6sample-text2:hover {
+  font-weight: 400;
+}
+.box-video-6sample .box-video-6sample-light {
+  background-color: white;
+  color: black;
+}
+
+/* SASS video lesson 5 mixin sample with media query. */
+.box-video-7sample {
+  background-color: #000000;
+  padding: 2%;
+}
+.box-video-7sample .box-video-7sample-flex-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+@media (max-width: 800px) {
+  .box-video-7sample .box-video-7sample-flex-content {
+    flex-direction: column;
+  }
+}
+.box-video-7sample .box-video-7sample-title {
+  background-color: #000;
+  color: #ff652f;
+}
+.box-video-7sample .box-video-7sample-text1, .box-video-7sample .box-video-7sample-text2 {
+  width: 60%;
+  font-weight: 200;
+  color: #FFF;
+}
+.box-video-7sample .box-video-7sample-text1:hover, .box-video-7sample .box-video-7sample-text2:hover {
+  font-weight: 400;
+}
+.box-video-7sample .box-video-7sample-text2 {
+  font-weight: 200;
+  color: purple;
+  background-color: lighter(#000, 100%);
+}
+.box-video-7sample .box-video-7sample-text2:hover {
+  font-weight: 400;
+}
+.box-video-7sample .box-video-7sample-light {
+  background-color: white;
+  color: black;
+}
+
+/* SASS video lesson 4 nesting sample with pseudo class. *//*# sourceMappingURL=main.css.map */
