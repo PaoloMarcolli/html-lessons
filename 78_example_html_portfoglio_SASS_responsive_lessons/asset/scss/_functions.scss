@@ -1,4 +1,0 @@
-/* SASS video lesson 5 functions. */
-@function weight($fontweight){
-    @return map-get($font-weights, $fontweight);
-}
