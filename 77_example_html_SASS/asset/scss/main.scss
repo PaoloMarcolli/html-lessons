@@ -1,3 +1,13 @@
+/*
+    partial file use _<filename>.scss;
+    no extension
+    i file con _ davanti non vengono prepocessati ma considerati parte del file main da precompilare
+    praticamente sono blocchi di codice per consentire una migliere lettura del file 
+*/
+@import './_reset';
+@import './_variables';
+@import './_functions';
+@import './_mixin';
 /*$primary-color: #272727;
 $accent-color: #ff652f;
 $text-color: #fff;
@@ -38,9 +48,6 @@ mark {
   }
 
 /* Variabili: consentono di memorizzare valori CSS che possono essere riutilizzati. Vediamo un esempio. */
-$primary-color: #3498db;
-$success-color-background: #2ecc71;
-$success-color-foreground: #fff;
 .sass-sample-1 {
       color: $primary-color;
   }
@@ -94,3 +101,163 @@ $color: #3498db;
 .lighten {
     color: lighten($color, 20%);
 }
+
+/* SASS video lesson. */
+
+.fl-box-conainer-video {
+    background-color: $color-bg-box-conainer;
+}
+.box-video {
+    height: 30px;
+    background-color: lighten($color-bg-box-conainer,20%);
+}
+
+/* SASS video lesson 2 map sample. */
+.box-video-2sample {
+    background-color: $backcolor-bg-box-video-2sample;
+    color: $color-bg-box-video-2sample;
+    padding:  2%;
+}
+
+.regular-video-2sample {
+    font-weight: map-get($font-weights, regular );
+}
+
+.medium-video-2sample {
+    font-weight: map-get($font-weights, medium );
+}
+
+.bold-video-2sample {
+    font-weight: map-get($font-weights,bold );
+}
+
+/* SASS video lesson 3 nesting sample. */
+.box-video-3sample {
+    background-color: #000000;
+    padding: 2%;
+    #{&}-title {   
+        background-color: $color-background-code;
+        color: $color-alert-message;
+    }  
+    #{&}-text {   
+        background-color: $color-background-code;
+        color: $color-code;
+        font-weight: map-get($font-weights, bold );
+    }  
+    #{&}_paragraph3 {
+        background-color: $color-background-code;
+        color: $color-code;
+        font-weight: map-get($font-weights, bolder );
+
+        &:hover {
+            font-weight: map-get($font-weights, regular );
+            color: pink;
+        }
+    }
+}
+/* SASS video lesson 4 funcion sample. */
+.box-video-4sample {
+    background-color: #000000;
+    padding: 2%;
+    #{&}-title {   
+        background-color: $color-background-code;
+        color: $color-alert-message;
+    }  
+    #{&}-text {   
+        font-weight: weight(tiny);
+        color: $color-code;
+        &:hover {
+            font-weight: weight(regular);
+        }    
+    }  
+}
+
+/* SASS video lesson 5 mixin sample. */
+.box-video-5sample {
+    background-color: #000000;
+    padding: 2%;
+    #{&}-flex-content {
+        @include flexCenter(column);
+    }
+    #{&}-title {   
+        background-color: $color-background-code;
+        color: $color-alert-message;
+    }  
+    #{&}-text1, #{&}-text2 {
+        font-weight: weight(tiny);
+        color: $color-code;
+        &:hover {
+            font-weight: weight(regular);
+        }    
+    }  
+    #{&}-light{
+        @include theme($light-theme:true);
+    }
+}
+
+/* SASS video lesson 5 mixin sample with media query. */
+.box-video-6sample {
+    background-color: #000000;
+    padding: 2%;
+
+    #{&}-flex-content {
+        @include flexCenter(row);
+        @include mobile {
+            flex-direction: column;
+        }    
+    }
+    #{&}-title {   
+        background-color: $color-background-code;
+        color: $color-alert-message;
+    }  
+    #{&}-text1, #{&}-text2 {
+        font-weight: weight(tiny);
+        color: $color-code;
+        &:hover {
+            font-weight: weight(regular);
+        }    
+    }  
+    #{&}-light{
+        @include theme($light-theme:true);
+    }
+}
+/* SASS video lesson 5 mixin sample with media query. */
+.box-video-7sample {
+    background-color: #000000;
+    padding: 2%;
+
+    #{&}-flex-content {
+        @include flexCenter(row);
+        @include mobile {
+            flex-direction: column;
+        }    
+    }
+    #{&}-title {   
+        background-color: $color-background-code;
+        color: $color-alert-message;
+    }  
+    #{&}-text1 {
+        width: calc(100% - 40%);
+        font-weight: weight(tiny);
+        color: $color-code;
+        &:hover {
+            font-weight: weight(regular);
+        }    
+    }  
+    #{&}-text2 {
+        @extend .box-video-7sample-text1;
+        font-weight: weight(tiny);
+        color: purple;
+        background-color: lighter($color-background-code,100%);
+        &:hover {
+            font-weight: weight(regular);
+        }    
+    }  
+    #{&}-light{
+        @include theme($light-theme:true);
+    }
+}
+
+/* SASS video lesson 4 nesting sample with pseudo class. */
+
+  
