@@ -1,7 +1,48 @@
 @primary-color: #3498db;
+@primary-navbar-color: #FFF;
+@primary-color: #000;
 
 /* classe di esempio less */
 .less-sample{
     background-color: @primary-color;
   }
   
+  nav {
+    background-color: @primary-navbar-color;
+    ul {
+      margin: 0;
+      padding: 10px;
+      list-style: none;
+      li {
+        display: inline-block;
+        a {
+          padding: 0 10px;
+          text-decoration: none;
+          text-transform: uppercase;
+          color: @primary-color;
+          height: 30px;
+          &:hover {
+            font-weight: bolder;
+          }
+        }
+      }
+    }
+  }
+
+  
+  .border-radius(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+    border: 1px solid @primary-color;
+    padding: 0 10px;
+  }
+  .box {
+    .border-radius(10px);
+  }
+
+  @base: 5%;
+  .size {
+    width: @base * 2;
+    .border-radius(@radius: 10px);
+  }
