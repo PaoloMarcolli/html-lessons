@@ -1,4 +1,4 @@
-Questo esercizio è progettato per aiutarti a fare pratica nella realizzazione di una pagina web utilizzando HTML e CSS.
+##Questo esercizio è progettato per aiutarti a fare pratica nella realizzazione di una pagina web utilizzando HTML e CSS.
 
 Non preoccuparti se alcuni dei concetti discussi qui ti sembrano nuovi: lo scopo di questo esercizio è proprio quello di aiutarti ad approfondire i concetti che non conosci e darti consigli per acquisire più sicurezza.
 
@@ -24,6 +24,3 @@ Utilizzare Flexbox o Grid per creare un layout responsive.
 Applicare stili personalizzati per rendere la pagina attraente e coerente con il tema ambientale (per esempio, colori naturali come verde e blu, font leggibili e moderni).
 Assicurarsi che la pagina sia leggibile e ben strutturata anche su dispositivi mobili.
 Utilizzare almeno un'animazione CSS per rendere la pagina più dinamica (per esempio, un effetto hover sui pulsanti).
-Nella programmazione vale la regola “less is more”, quindi non strafare. L’importante è fare poche cose, in maniera solida e intelligente.
-
-Infine, ricorda: non c'è problema se incontri difficoltà o se i concetti ti sembrano difficili da comprendere. L'obiettivo è consigliarti come svolgere un buon progetto. Qualora avessi qualche dubbio, consulta in qualsiasi momento la teoria del Corso di HTML e CSS.
