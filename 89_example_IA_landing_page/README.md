@@ -2,11 +2,11 @@
 
 Non preoccuparti se alcuni dei concetti discussi qui ti sembrano nuovi: lo scopo di questo esercizio è proprio quello di aiutarti ad approfondire i concetti che non conosci e darti consigli per acquisire più sicurezza.
 
-REQUISITI GENERALI
+## REQUISITI GENERALI
 
 Crea una landing page per GreenEarth, una startup che si occupa di progetti a impatto ambientale come riforestazione e pulizia degli oceani.
 
-DETTAGLI SPECIFICI
+## DETTAGLI SPECIFICI
 
 La pagina web dovrà rappresentare in tutto e per tutto il brand del tuo cliente, e in particolare dovrà essere così strutturata:
 
@@ -20,7 +20,7 @@ Per quanto riguarda lo stile della pagina, potrai inserire il file .css direttam
 
 Tale file dovrà:
 
-Utilizzare Flexbox o Grid per creare un layout responsive.
-Applicare stili personalizzati per rendere la pagina attraente e coerente con il tema ambientale (per esempio, colori naturali come verde e blu, font leggibili e moderni).
-Assicurarsi che la pagina sia leggibile e ben strutturata anche su dispositivi mobili.
-Utilizzare almeno un'animazione CSS per rendere la pagina più dinamica (per esempio, un effetto hover sui pulsanti).
+- Utilizzare Flexbox o Grid per creare un layout responsive.
+- Applicare stili personalizzati per rendere la pagina attraente e coerente con il tema ambientale (per esempio, colori naturali come verde e blu, font      leggibili e moderni).
+- Assicurarsi che la pagina sia leggibile e ben strutturata anche su dispositivi mobili.
+- Utilizzare almeno un'animazione CSS per rendere la pagina più dinamica (per esempio, un effetto hover sui pulsanti).
