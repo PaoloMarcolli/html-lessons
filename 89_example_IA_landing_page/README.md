@@ -1,4 +1,4 @@
-##Questo esercizio è progettato per aiutarti a fare pratica nella realizzazione di una pagina web utilizzando HTML e CSS.
+## Questo esercizio è progettato per aiutarti a fare pratica nella realizzazione di una pagina web utilizzando HTML e CSS.
 
 Non preoccuparti se alcuni dei concetti discussi qui ti sembrano nuovi: lo scopo di questo esercizio è proprio quello di aiutarti ad approfondire i concetti che non conosci e darti consigli per acquisire più sicurezza.
 
