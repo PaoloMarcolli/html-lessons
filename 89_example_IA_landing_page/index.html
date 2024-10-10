@@ -3,41 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form tutorial</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" >
+    <title>GreenEarth | Scopri il Futuro Oggi</title>
     <link rel="icon" href="asset/img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="asset/img/favicon-16x16.png" sizes="16x16" type="image/png">
     <link rel="icon" href="asset/img/favicon-32x32.png" sizes="32x32" type="image/png">
+    <style>
+     * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .flx-container {
+      flex-direction: row;
+    }
+    .hero {
+      height: 100vh;
+      background-image: url('background.jpg'); /* Inserisci il percorso dell'immagine */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(156, 122, 94, 0.582); /* Overlay semi-trasparente */
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+    }
+
+    .cta-button {
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      color: white;
+      background-color: #1a6b32bb;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+
+    .cta-button:hover {
+      background-color: #1a6b32;
+    }       
+    </style>
 </head>
 <body>
-    <header>
-    </header>
-        <h1>Tutorial OpenGraph </h1>
-        <div class="illustration">
-            <img src='asset/img/header-image.png'
-            srcset='asset/img/header-image.png 1x,
-            asset/img/header-image.png 2x'
-            style='width: 100%;height: auto;'/>
-        </div>
-    </header>
-        <main>
-            <article>
-                <section>
-                    <header><h2>About US</h2></header>
-                </section>
-                <section>
-                    <header><h2>Our Projects</h2></header>
-                 </section>
-                 <section>
-                    <header><h2>Contact Us</h2></header>
-                 </section>
-            </article>
-        </main>
-        <footer>
-            <p>&copy; 2024 Lezioni di Web Development</p>
-        </footer>  
-    </main>
+  
+  <header class="container-flex-header">
+  <!--  <img src="asset/img/logo-with-brand-small.png" alt="Depyl" class="logo">
+    <input class="menu-btn" id="menu-btn" type="checkbox"/>
+    <label for="menu-btn" class="menu-icon">
+        <span class="nav-icon"></span>
+    </label>  
+    <ul class="menu">
+        <li><a href="#hero">Da dove nasce l'idea</a></li>
+        <li><a href="#about-us">Vision</a></li>
+        <li><a href="#mission">Mission</a></li>
+        <li><a href="#who-are">Chi siamo</a></li>
+        <li><a href="#how-do">Come funziona?</a></li>
+    </ul>-->
+  </header>        
+  <main>
+      <article>
+          <section class="hero">
+              <div class="overlay"></div>
+              <div class="hero-content">
+                <h1>Scopri il Futuro Oggi</h1>
+                <p>Rigenera la Terra: Un Albero alla Volta con <strong>GreenEarth</strong></p>
+                <a href="#contact-us" class="cta-button">Inizia Ora</a>
+              </div>
+          </section>                
+          <section>
+              <header>
+                  <h2>About US</h2>
+              </header>
+              <p>
+                  GreenEarth si impegna a creare un impatto positivo sul pianeta, affrontando i problemi ambientali più critici come la deforestazione e l'inquinamento marino. 
+                  Attraverso progetti di riforestazione e pulizia degli oceani, vogliamo ridurre le emissioni di CO2, proteggere la biodiversità e salvaguardare gli ecosistemi.
+              </p>                    
+          </section>
+          <section id="our-projects">
+            <header>
+                <h2>Our Projects</h2>
+            </header>
+          </section>
+          <section id="contact-us">
+            <header>
+              <h2>Contact Us</h2>
+            </header>
+          </section>
+      </article>
+  </main>
+  <footer>
+      <p>&copy; 2024 Lezioni di Web Development</p>
+  </footer>  
 </body>
 </html>
