@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive image tutorial</title>
+    <title>24 . Immagini Resposive</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    
+    <link crossorigin="" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600">
     <link rel="stylesheet" href="asset/css/style.css"></link>
     <href rel="icon" href="asset/css/style.css"></href>
     <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
@@ -14,70 +14,164 @@
     <link rel="icon" href="../img/favicon-32x32.png" sizes="32x32" type="image/png">
 </head>
 <body>
-    <h1>Esempio di Immagini Resposive</h1>
-    <h2>Le immagini responsive sono un elemento essenziale per garantire una buona esperienza utente su dispositivi con dimensioni dello schermo e risoluzioni diverse</h2>
-    <p>
-        Questo capitolo del Corso ti guiderà attraverso i vari metodi per rendere le immagini del tuo sito web responsive.Parlando di design responsive, abbiamo imparato a utilizzare le media query per creare layout separati per dispositivi mobili, tablet e desktop. Ora vogliamo fare lo stesso con le immagini. Proprio come le media query ci permettono di presentare condizionatamente diverse regole CSS, vogliamo visualizzare diverse immagini in base al dispositivo dell'utente.
-    </p>
-    <h2>Le immagini hanno dimensioni intrinseche.</h2>
-    <p>
-        Non possiamo allungare una foto di 500×250 pixel oltre i 500 pixel di larghezza senza che diventi pixelata. I display retina e i dispositivi mobili complicano ulteriormente le cose.
-        Per rendere le nostre immagini responsive, dobbiamo considerare tre aspetti:
-    </p>
-    <ul>
-        <li>Le dimensioni del dispositivo</li>
-        <li>Le dimensioni dell'immagine</li>
-        <li>La risoluzione dello schermo del dispositivo</li>
-    </ul>
-    <p>
-        Per sperimentare con le immagini responsive, abbiamo bisogno di un sito web responsive con cui lavorare. In questo capitolo, costruiremo una pagina web di esempio aggiungendo due immagini che cambieranno a seconda del dispositivo dell'utente.
-    </p>
-    <h2>Schermi retina</h2>
-    <h2>I display retina hanno il doppio dei pixel per pollice rispetto ai display a risoluzione standard.</h2>
-    <p>
-        Per rendere correttamente un'immagine su un dispositivo retina, l'immagine deve essere grande il doppio delle sue dimensioni di visualizzazione finali.Per esempio, se vuoi aggiungere un'immagine di 500×250 pixel alla pagina, il file dell'immagine corrispondente deve essere di 1000×500 pixel.<br><br>Ecco un esempio.
-    </p>
-    <div class='section content'>
-        <img class='illustration' src='asset/img/re-image.svg' style='max-width: 500px'/>
-    </div>
-    <h2>Immagini SVG responsive</h2>
-    <h3>I display retina hanno il doppio dei pixel per pollice rispetto ai display a risoluzione standard.</h3>
-    <p>Le immagini SVG (Scalable Vector Graphics) sono vettoriali, il che le rende naturalmente responsive e perfette per i display retina.<br><br>Aggiungiamo un'illustrazione SVG alla nostra pagina responsive.</p>
-    <div class='section content'>
-        <img class='illustration' src='asset/img/re-image.svg' style='max-width: 500px'/>
-    </div>
-    <p>Per fare in modo che l'immagine si adatti correttamente ai diversi layout, aggiungiamo una regola CSS.</p>
-    <div class='section content'>
-        <img class='illustration' src='asset/img/re-image.svg' style='max-width: 500px'/>
-    </div>
-    <h2>Immagini raster responsive (PNG, GIF, JPG)</h2>
-    <div class='illustration'>
-        <img src='images/illustration-small.png'
-             srcset='images/illustration-small.png 1x,
-                     images/illustration-big.png 2x'
-             style='max-width: 500px'/>
-      </div>
-      <h2>Ottimizzare immagini per la larghezza dello schermo</h2>
-      <div class='section header'>
-        <div class='photo'>
-          <img src='images/photo-small.jpg'
-               srcset='images/photo-big.jpg 2000w,
-                       images/photo-small.jpg 1000w'
-               sizes='(min-width: 960px) 960px,
-                      100vw'/>
-        </div>
-      </div>
-      <h2>Direzione artistica con <picture></h2>
-        <div class='section header'>
-            <div class='photo'>
-              <picture>
-                <source media='(min-width: 401px)'
-                        srcset='images/photo-big.jpg'/>
-                <source media='(max-width: 400px)'
-                        srcset='images/photo-tall.jpg'/>
-                <img src='images/photo-small.jpg'/>
-              </picture>
+    <header>
+    </header>
+    <article>
+        <section>
+            <h2>24 . Immagini Resposive</h2>   
+            <div class="illustration">
+                <img src='asset/img/header-image.png'
+                srcset='asset/img/header-image.png 1x,
+                asset/img/header-image.png 2x'
+                style='width: 100%;height: auto;'/>
             </div>
-          </div>
+            <a href="https://internetingishard.netlify.app/html-and-css/responsive-images/index.html" target="_blank">
+                <p>Fonte Immagine</p>
+            </a>
+            <strong>Le immagini responsive sono un elemento essenziale per garantire una buona esperienza utente su dispositivi con dimensioni dello schermo e risoluzioni diverse</strong>.
+            Questo capitolo del Corso ti guiderà attraverso i vari metodi per rendere le immagini del tuo sito web responsive.
+            </p>
+            <p>
+                Parlando di design responsive, abbiamo imparato a utilizzare le media query per creare layout separati per dispositivi mobili, tablet e desktop. Ora vogliamo fare lo stesso con le immagini. Proprio come le media query ci permettono di presentare condizionatamente diverse regole CSS, vogliamo visualizzare diverse immagini in base al dispositivo dell'utente.
+            </p>
+            <p>
+                <strong>Le immagini hanno dimensioni intrinseche.</strong>Non possiamo allungare una foto di 500×250 pixel oltre i 500 pixel di larghezza senza che diventi pixelata. I display retina e i dispositivi mobili complicano ulteriormente le cose.
+                Per rendere le nostre immagini responsive, dobbiamo considerare tre aspetti:
+            </p>
+            <ul>
+                <li>Le dimensioni del dispositivo</li>
+                <li>Le dimensioni dell'immagine</li>
+                <li>La risoluzione dello schermo del dispositivo</li>
+            </ul>
+            <p>
+                Per sperimentare con le immagini responsive, abbiamo bisogno di un sito web responsive con cui lavorare. In questo capitolo, costruiremo una pagina web di esempio aggiungendo due immagini che cambieranno a seconda del dispositivo dell'utente.
+            </p>
+            <div class="illustration">
+                <img src='asset/img/body-image.png'
+                srcset='asset/img/body-image.png 1x,
+                asset/img/body-image.png 2x'
+                style='width: 100%;height: auto;'/>
+            </div>
+            <a href="https://internetingishard.netlify.app/html-and-css/responsive-images/index.html" target="_blank">
+                <p>Fonte Immagine</p>
+            </a>                
+        </section>
+        <section>
+            <h3>Schermi retina</h3>
+            <p><strong>I display retina hanno il doppio dei pixel per pollice rispetto ai display a risoluzione standard.</strong></p>
+            <p>
+                Per rendere correttamente un'immagine su un dispositivo retina, l'immagine deve essere grande il doppio delle sue dimensioni di visualizzazione finali.
+            </p>
+            <p>Per esempio, se vuoi aggiungere un'immagine di 500×250 pixel alla pagina, il file dell'immagine corrispondente deve essere di 1000×500 pixel.</p>
+            <p>Ecco un esempio.</p>
+            <pre>
+                <code>
+&lt;div class='section content'&gt;
+    &lt;img class='illustration' src='images/illustration.svg' style='max-width:
+    500px'/&gt;
+&lt;div'&gt;
+                </code>
+            </pre>
+            <div class='section content'>
+                <img class='illustration' src='asset/img/re-image.svg' style="max-width: 500px"/>
+            </div>
+        </section>
+            <section>
+                <h3>Immagini SVG responsive</h3>
+                <p>Le immagini SVG (Scalable Vector Graphics) sono vettoriali, il che le rende naturalmente responsive e perfette per i display retina.
+                <p>Aggiungiamo un'illustrazione SVG alla nostra pagina responsive.</p>
+                <pre>
+                    <code>
+    &lt;div class='section content'&gt;
+        &lt;img class='illustration' src='images/illustration.svg' /&gt;
+    &lt;div'&gt;
+                    </code>
+                </pre> 
+                <p>Per fare in modo che l'immagine si adatti correttamente ai diversi layout, aggiungiamo una regola CSS.</p>
+                <pre>
+                    <code>
+    css :
+    
+    .illustration {                        
+        width: 100%;
+        max-width: 250px; /* Limitiamo l'immagine a 250px */
+    }
+                    </code>
+                </pre>    
+                <p>Vediamo il risultato avremo chiaramente un immagine SVG di 250 x 250.</p>  
+                <img class='illustration' src='asset/img/re-image.svg'/>
+            </section>
+            <section>
+                <h3>Immagini raster responsive (PNG, GIF, JPG)</h3>
+                <p>Le immagini raster (PNG, GIF, JPG) sono definite pixel per pixel, rendendole più sensibili alla risoluzione dello schermo rispetto alle SVG.</p>
+                <p>Possiamo utilizzare l'attributo srcset per fornire diverse versioni di un'immagine a seconda della risoluzione dello schermo.</p>
+                <pre>
+                    <code>
+    html: 
+
+    &lt;div class='illustration'&gt;
+        &lt;img src='asset/img/image-small-alissa.jpg';
+            srcset='asset/img/image-small-alissa.jpg 1x,;
+            asset/img/image-medium-alissa.jpg 2x';
+            style='max-width: 500px'/&gt;
+    &lt;div'&gt;
+                    </code>
+                </pre>     
+                <p>Vediamo il risultato</p>
+                <div class='illustration'>
+                    <img src="asset/img/image-small-alissa.jpg"
+                        srcset="asset/img/image-small-alissa.jpg 1x,
+                        asset/img/image-medium-alissa.jpg 2x"
+                        style="max-width: 500px"/>
+                </div>
+                <p>
+                    L'attributo <mark>srcset</mark> punta a una lista di file immagine alternativi, insieme alle proprietà che definiscono quando il browser dovrebbe usare ciascuno di essi.
+                </p>                
+                <p>
+                    L'attributo <mark>x1,x2</mark> indicano i DPR quindi se x2 parliamo di un dispaly retina.
+                </p>                
+            </section>
+            <section>
+                <h3>Ottimizzare immagini per la larghezza dello schermo</h3>
+                <p>Per ottimizzare le immagini in base alla larghezza dello schermo, possiamo utilizzare <mark>srcset</mark> insieme all'attributo <mark>sizes</mark>.</p>
+                <pre>
+                    <code>
+    html: 
+    
+    &lt;div class='illustration'&gt;
+        &lt;img src='asset/img/image-small-alissa.jpg';
+            srcset='asset/img/image-small-alissa.jpg 1x,;
+            asset/img/image-medium-alissa.jpg 2x';
+            style='max-width: 500px'/&gt;
+    &lt;div'&gt;
+                    </code>
+                </pre>     
+                <p>Vediamo il risultato</p>
+                <div class='section header'>
+                    <div class='photo'>
+                    <img src='asset/img/image-small-alissa.jpg'
+                        srcset='asset/img/image-medium-alissa.jpg 2000w,
+                        asset/img/image-small-alissa.jpg 1000w'
+                        sizes='(min-width: 960px) 960px,
+                                100vw'/>
+                    </div>
+                </div>
+                <p>L'attributo <mark>sizes</mark> definisce una serie di media query insieme alla larghezza resa dell'immagine quando quella media query è in vigore.</p>
+            </section>
+            <section>
+            <h2>Direzione artistica con &nbsp;picture&gl;</h2>
+                <div class='section header'>
+                    <div class='photo'>
+                    <picture>
+                        <source media='(min-width: 401px)'
+                                srcset='images/photo-big.jpg'/>
+                        <source media='(max-width: 400px)'
+                                srcset='images/photo-tall.jpg'/>
+                        <img src='images/photo-small.jpg'/>
+                    </picture>
+                    </div>
+                </div>
+            </section>
+    </article>
     </body>
 </html>
