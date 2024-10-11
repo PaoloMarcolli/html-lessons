@@ -3,28 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="asset/scss/main/main.css">
-    <link rel="stylesheet" href="asset/css/style.css">    
+    <title>Sticky Hamburger Menu</title>
+    <link rel="stylesheet" href="asset/css/style.css">
 </head>
 <body>
-    <div class="header">
-      </div>
-      <div id="navbar">
-        <a class="active" href="javascript:void(0)">About</a>
-        <a class="active" href="javascript:void(0)">Projects</a>
-        <a href="javascript:void(0)">Contact</a>
-      </div>
-      <div class="content">
-        <h3>Sticky Navigation Example</h3>
-        <p>The navbar will stick to the top when you reach its scroll position.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-      </div>
+  <header class="header">
+    <a class="logo" href="/"># Paolo.Marcolli</a>
+    <input class="menu-btn" id="menu-btn" type="checkbox" checked="checked"/>
+    <label for="menu-btn" class="menu-icon">
+        <span class="nav-icon"></span>
+    </label>
+    <ul class="menu">
+        <li><a href="#">Who am I ?</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Curriculum</a></li>
+        <li><a href="#">Contacts</a></li>
+    </ul>
+</header>
+    <main>
+      <article> 
+        <section id="home">
+            <h1>Home</h1>
+            <p>Contenuto della sezione Home...</p>
+        </section>
+        <section id="about">
+            <h1>About</h1>
+            <p>Contenuto della sezione About...</p>
+        </section>
+        <section id="services">
+            <h1>Services</h1>
+            <p>Contenuto della sezione Services...</p>
+        </section>
+        <section id="contact">
+            <h1>Contact</h1>
+            <p>Contenuto della sezione Contact...</p>
+        </section>
+      </article>
+    </main>
+    <script src="asset/js/script.js"></script>
 </body>
 </html>

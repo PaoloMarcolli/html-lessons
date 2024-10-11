@@ -32,7 +32,7 @@ Al fine di dimostrare di saperti destreggiare con quanto appreso durante il Cors
 - [ ] Opzionalmente, se desideri, puoi utilizzare servizi come EmailJS per inviare il contenuto del form alla tua email.
 - [ ] Un framework front end (Bootstrap, Materialize, ecc.).
 - [ ] Una favicon.
-- [ ] Un menu sticky, almeno per la modalità mobile.
+- [X] Un menu sticky, almeno per la modalità mobile.
 - [ ] Crea almeno una pagina, tra quelle proposte o quelle previste dai requisiti, che implementi il layout tramite FlexBox o Grid System (o, perché no, tutti e due).
 - [ ] Utilizza Sass o Less per i tuoi CSS.
 
