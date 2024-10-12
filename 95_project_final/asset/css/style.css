@@ -1,7 +1,7 @@
 body{
     margin: 0;
     font-family: 'Inter', Arial, Helvetica, sans-serif;
-    background-color: black;
+    background-color: white;
     height: 100vh;
 }
 
@@ -12,24 +12,39 @@ a{
 main {
     flex-direction: column;
     margin:0px;
-    height: 100%;
-    margin: 0 15%;    
+    height: 100%;  
 } 
 section{
-    background-color: #FFF;
+    background-color: #212121;
     align-items: center;
     flex: 1;
-    color: #212121;
+    color: #fff;
     padding: 15px;
 }
 
 .container-flex-main {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    background-color: red;
+    align-items: stretch;
+    height: 100%;
  }
  
+ .flexbox-left {
+    background-color: white;
+    width: 2.5%;
+ }
+ .flexbox-right {
+    background-color: white;
+    width: 2.5%;
+ }
+ 
+ .flexbox-main {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+ }
+ 
+
 .header{
     background-color: #212121de;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
@@ -58,6 +73,7 @@ section{
 
 .header .logo{
     display: flex;
+    padding: 10px 10px;
     flex-direction: row;
     justify-content: start;
     float: left;  
@@ -145,6 +161,27 @@ section{
     .header .menu-icon{
         display: none;
     }
+    .container-flex-main {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        height: 100%;
+     }
+     
+     .flexbox-left {
+        background-color: white;
+        width: 15%;
+     }
+     .flexbox-right {
+        background-color: white;
+        width: 15%;
+     }
+     
+     .flexbox-main {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+     }    
 }
 
 
