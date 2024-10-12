@@ -3,34 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sticky Hamburger Menu</title>
+    <title># Paolo Marcolli | Web Site </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link crossorigin="" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600">
+    <meta property="og:title" content="Depyl per un futuro migliore.">
+    <meta property="og:description" content="Vendita impianti per la depurazione dell’acqua">        
+    <meta property="og:image" content="https://paolomarcolli.github.io/trial-project-depyl/assets/img/favicon-32x32.png">        
+    <meta property="og:url" content="https://paolomarcolli.github.io/trial-project-depyl/">        
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Depyl" />
+    <meta property="og:locale" content="it_IT" />
+    <link rel="icon" href="asset/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="asset/img/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="asset/img/favicon-32x32.png" sizes="32x32" type="image/png">
     <link rel="stylesheet" href="asset/css/style.css">
 </head>
 <body>
   <header class="header">
-    <a class="logo" href="/"># Paolo.Marcolli</a>
+    <div class="logo">
+        <div>
+            <img src="asset/img/logo-50x50-white.png" alt="# Paolo Marcolli | Web Site" >
+        </div>
+        <div>
+            <!--<h1># Paolo Marcolli | Web Site</h1>-->
+        </div>
+    </div>
     <input class="menu-btn" id="menu-btn" type="checkbox" checked="checked"/>
     <label for="menu-btn" class="menu-icon">
         <span class="nav-icon"></span>
     </label>
     <ul class="menu">
-        <li><a href="#">Who am I ?</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Curriculum</a></li>
-        <li><a href="#">Contacts</a></li>
+        <li><a href="#home">Who am I ?</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#curriculum">Curriculum</a></li>
+        <li><a href="#contact">Contacts</a></li>
     </ul>
 </header>
-    <main>
+    <main class="container-flex-main">
       <article> 
         <section id="home">
             <h1>Home</h1>
             <p>Contenuto della sezione Home...</p>
         </section>
-        <section id="about">
+        <section id="projects">
             <h1>About</h1>
             <p>Contenuto della sezione About...</p>
         </section>
-        <section id="services">
+        <section id="curriculum">
             <h1>Services</h1>
             <p>Contenuto della sezione Services...</p>
         </section>
@@ -40,6 +60,9 @@
         </section>
       </article>
     </main>
+    <footer>
+        <p>@Copiright 2024 Polosoft77</p>
+    </footer>
     <script src="asset/js/script.js"></script>
 </body>
 </html>
