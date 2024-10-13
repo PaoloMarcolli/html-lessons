@@ -141,20 +141,22 @@
     
     &lt;div class='illustration'&gt;
         &lt;img src='asset/img/image-small-alissa.png'
-            srcset='asset/img/image-medium-alissa.png 2000w,
-            asset/img/image-medium-alissa.png 1000w';
-            sizes='(min-width: 960px) 960px,
-    &lt;100vw'/'&gt;
+            srcset='asset/img/image-big-alissa.png 1024w,
+            asset/img/image-medium-alissa.png 640w,
+            asset/img/image-big-alissa 320w'
+            sizes='(max-width: 600px) 100vw, (min-width: 601px) 50vw ,(max-width: 375px) 1vw'
+        /&gt;
                     </code>
                 </pre>     
                 <p>Vediamo il risultato</p>
                 <div class='section header'>
                     <div class='photo'>
-                    <img src='asset/img/image-small-alissa.png'
-                        srcset='asset/img/image-medium-alissa.png 2000w,
-                        asset/img/image-small-alissa.png 1000w'
-                        sizes='(min-width: 960px) 960px,
-                                100vw'/>
+                    <img src="asset/img/image-small-alissa.png"
+                        srcset="asset/img/image-big-alissa.png 1024w,
+                        asset/img/image-medium-alissa.png 640w,
+                        asset/img/image-big-alissa 320w"
+                        sizes="(max-width: 600px) 100vw, (min-width: 601px) 50vw ,(max-width: 375px) 1vw"
+                        alt="Alissa" style="width: 100%;" >
                     </div>
                 </div>
                 <p>L'attributo <mark>sizes</mark> definisce una serie di media query insieme alla larghezza resa dell'immagine quando quella media query è in vigore.</p>
